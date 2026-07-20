@@ -59,6 +59,12 @@ pattern: **wherever a failure mode can be phrased as a checkable postcondition, 
 code and make it mandatory, instead of asking the model to please remember not to do the bad
 thing.**
 
+The same honesty applies to its limits (see `ground.py`'s docstring and `tools/engine/tests/`): a
+present quote is necessary evidence, not sufficient proof. The check proves the quote appears in the
+source, not that the quote supports the claim, so a real quote pasted next to a false claim still
+passes. It makes inventing a fact from nothing hard; it does not make misattributing a real quote
+hard. That is the grounding-gate analogue of `honesty_gate.py`'s "real term in a false context".
+
 ## 4. Adversarial verification: default to refuting, not confirming
 
 A model reviewing its own work (or another model's work) has an incentive gradient toward

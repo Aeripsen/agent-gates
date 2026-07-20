@@ -2,8 +2,10 @@
 
 Machine-checkable gates for LLM agents: an honesty gate that keeps a generated resume from
 vouching for itself, an eligibility gate that blocks job classes a student applicant cannot be
-hired into, and a grounding gate that makes even weak free models safe for web extraction
-because a claim without a verbatim found-in-source quote is dropped by code, not by judgment.
+hired into, and a grounding gate that drops any web-extracted claim whose quote is not verbatim in
+the source, so a weak free model cannot invent a price or spec out of nothing. All three are pure
+code with tests, and each documents what it cannot catch: the grounding gate proves a quote is
+present, not that the quote supports the claim.
 
 This is a small, hand-picked extract of a private personal automation project. The full project is a
 "life-operating-system" repo: a job search pipeline, a buying/research agent, a calendar and
@@ -11,7 +13,7 @@ habits system, and a lot of personal data that will never be public. This repo i
 the few pieces that are actually general enough to be useful or interesting to someone else, with
 every trace of the original owner's personal data removed and replaced by a synthetic example.
 
-If you are looking for a polished framework, this is not it. If you want two small, tested, honest
+If you are looking for a polished framework, this is not it. If you want a few small, tested, honest
 pieces of code plus a writeup of what made an AI coding agent trustworthy enough to run against
 real personal stakes, that is what is here.
 
@@ -33,9 +35,10 @@ real personal stakes, that is what is here.
 - **`tools/llm_router.py`** - a free-tier LLM router with a provider fallback chain (OpenRouter,
   Groq, Gemini), so bulk/cheap text work does not need a paid API budget.
 - **`tools/engine/`** - a small "discover, fetch, sanitize, ground, store, alert" intake-engine
-  skeleton, including a substring-based grounding gate that makes it safe to let even a weak free
-  model extract facts from scraped web content: a claim without a verbatim, found-in-source quote
-  is dropped by code, not by the model's judgment.
+  skeleton, including a substring-based grounding gate (`ground.py`, tested in
+  `tools/engine/tests/`): a claim without a verbatim, found-in-source quote is dropped by code, not
+  by the model's judgment. Like the honesty gate, it documents its own blind spot in its docstring:
+  it proves the quote is present in the source, not that the quote actually supports the claim.
 - **`ARCHITECTURE.md`** - the ideas that generalize: file-brain-as-source-of-truth, one writer per
   file for concurrent agents, machine-checkable agent contracts instead of prompt instructions,
   adversarial verification, human gates on irreversible actions, and a failure-mode ledger
@@ -103,8 +106,13 @@ python -m venv .venv
 source .venv/bin/activate
 
 pip install pytest
-python -m pytest projects/job-search/tests -q
+python -m pytest projects/job-search/tests tools/engine/tests -q
 ```
+
+The two gates under `projects/job-search/tests` are pure, offline, stdlib-only. The grounding-gate
+tests under `tools/engine/tests` are also offline (they exercise the substring gate and the claim
+parsing; the live free-model call in `extract_grounded` is not run in tests). Both paths run in CI
+on every push (`.github/workflows/ci.yml`).
 
 ## Setup for the tools that need keys
 

@@ -3,9 +3,18 @@
 The deterministic post-condition this engine is built around: a model must return, for every
 claim, a verbatim_quote; Python asserts the quote is actually a substring of the sanitized
 source text (whitespace-normalized, case-insensitive). On miss the claim dies, and the
-caller may re-ask with the rejection appended. This is what makes free/weak models safe: even
-a weak model cannot fabricate a price/spec/fact, because a quote not found in the page is
-dropped by code, not by judgment.
+caller may re-ask with the rejection appended. What this buys, precisely: a claim whose quote is
+not verbatim in the page is dropped by code, not by judgment, so a free/weak model cannot invent
+a price/spec/fact out of nothing and have it survive.
+
+WHAT THIS GATE CANNOT CATCH. Read this before trusting a pass, same as honesty_gate.py.
+
+The check is `quote in source`. It proves the quote APPEARS in the source; it does NOT prove the
+quote SUPPORTS the claim. So the "real term in a false context" class walks straight through: a
+genuine verbatim quote pasted next to an unrelated or false `claim` field is grounded here, because
+nothing ties the two together. A quote is necessary evidence, not sufficient proof. This gate makes
+fabricating a fact from thin air hard; it does not make misattributing a real quote hard. Downstream
+consumers must still read the (claim, quote) pair, not trust "grounded" as "true".
 
 Claims are dicts with at least {"claim": str, "verbatim_quote": str}. Extra keys pass through.
 """
