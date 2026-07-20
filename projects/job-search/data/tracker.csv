@@ -1,0 +1,6 @@
+id,found_date,source,title,company,location,remote,url,posted_date,tier,fit_score,work_auth_ok,key_reqs,missing_reqs,status,next_action,deadline,notes
+1,2026-01-05,ats,Software Engineer Intern,Example Corp A,Toronto ON,hybrid,https://example.com/jobs/1,2026-01-01,A,85,yes,python;git,none,new,apply,2026-02-01,sourced from example ats feed
+2,2026-01-05,ats,Software Engineer New Grad,Example Corp B,Remote,remote,https://example.com/jobs/2,2026-01-02,B,40,yes,python;sql,production experience,skip,none - ineligible class,,ineligible: grad 2027 role is NEW_GRAD
+3,2026-01-06,ats,Data Science Co-op,Example Corp C,Waterloo ON,hybrid,https://example.com/jobs/3,2026-01-03,A,80,yes,python;sql,none,new,apply,2026-02-05,sourced from example ats feed
+4,2026-01-06,ats,Software Engineer,Example Corp D,Toronto ON,onsite,https://example.com/jobs/4,2026-01-04,C,10,yes,5+ years experience,everything,skip,none - ineligible class,,ineligible: grad 2027 role is FULL_TIME
+5,2026-01-07,ats,Technical Sourcer,Example Corp E,Remote,remote,https://example.com/jobs/5,2026-01-05,U,50,yes,communication,none,new,human review,2026-02-10,unclear title class - kept for review

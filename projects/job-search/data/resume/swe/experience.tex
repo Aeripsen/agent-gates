@@ -1,0 +1,29 @@
+% Synthetic example experience.tex - fictional applicant, used only to make the honesty_gate
+% tests runnable standalone. Real resume LaTeX templates pass a date range as one brace-delimited
+% argument like {Sep 2022 -- Present}; honesty_gate.role_spans()/total_span_months() parse exactly
+% that shape out of this file. No real person, employer, or dates.
+
+\resumeSubheading
+  {Riverbend University}{Anytown, ON}
+  {Research Assistant, Network Security Lab}{Sep 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Built a random-forest traffic classifier for a class research project, evaluated
+      over a public, anonymized network-flow dataset; no production systems, no real user data.}
+    \resumeItem{Automated the lab's experiment pipeline in Python, replacing a manual multi-step
+      workflow with one command.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Northfield Robotics Club}{Anytown, ON}
+  {Software Lead (Volunteer)}{May 2023 -- Dec 2023}
+  \resumeItemListStart
+    \resumeItem{Wrote a static HTML/CSS/JS site for the club, with a GitHub Actions CI/CD
+      pipeline that deploys on every merge to main.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Anytown Tutoring Co-op}{Anytown, ON}
+  {Teaching Assistant (Part-Time)}{Jan 2024 -- Aug 2024}
+  \resumeItemListStart
+    \resumeItem{Ran weekly problem-solving sessions for an introductory programming course.}
+  \resumeItemListEnd

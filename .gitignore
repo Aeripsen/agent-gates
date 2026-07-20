@@ -1,0 +1,38 @@
+# --- Secrets (NEVER commit) ---
+.env
+*.key
+*.pem
+secrets/
+*.local.md
+*token*.json
+*credentials*.json
+*.session
+
+# --- Data / local state (never commit real runs) ---
+# Root-anchored: /data/ is local engine state. projects/job-search/data/ is SYNTHETIC example
+# content the tests need, so it is committed; only its live-run subdirs stay ignored.
+/data/
+projects/job-search/data/applications/
+projects/job-search/data/private/
+tools/engine/data/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- OS / editor ---
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+
+# --- Logs / caches ---
+*.log
+.cache/

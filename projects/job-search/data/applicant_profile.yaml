@@ -1,0 +1,15 @@
+# Synthetic example applicant profile. No real personal data. Replace every field with your own
+# truthful information; never fabricate an answer to a screening question.
+
+name: "Jane Example"
+
+education:
+  institution: "Riverbend University"
+  program: "B.Sc. Computer Science"
+  expected_graduation: "2027"
+  graduation_date_iso: "2027-04-30"   # eligibility_gate.py GRAD_YEAR defaults to match this
+
+work_authorization:
+  # Placeholder answers only. Answer truthfully for yourself; never fabricate these.
+  can_work_in_country: "yes"
+  requires_sponsorship: "no"
