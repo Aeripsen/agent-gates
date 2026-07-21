@@ -51,19 +51,27 @@ these gates were built for calls `check()`/`is_eligible()` and rejects on any vi
 mechanically, every time, regardless of how long the session has been running or how the prompt
 was worded that day.
 
-The `tools/engine/ground.py` substring-validation gate is the same idea applied to a different
-problem: instead of trusting a (possibly free/weak) model not to hallucinate a fact from a
-scraped web page, the code demands a verbatim quote and checks the quote is actually present in
-the source text. A model cannot talk its way past a `str in str` check. This is the general
-pattern: **wherever a failure mode can be phrased as a checkable postcondition, write the check in
-code and make it mandatory, instead of asking the model to please remember not to do the bad
-thing.**
+The `tools/engine/ground.py` grounding gate is the same idea applied to a different problem:
+instead of trusting a (possibly free/weak) model not to hallucinate a fact from a scraped web
+page, the code demands a verbatim quote and checks the quote is actually present in the source
+text. A model cannot talk its way past a `str in str` check. This is the general pattern:
+**wherever a failure mode can be phrased as a checkable postcondition, write the check in code and
+make it mandatory, instead of asking the model to please remember not to do the bad thing.**
 
-The same honesty applies to its limits (see `ground.py`'s docstring and `tools/engine/tests/`): a
-present quote is necessary evidence, not sufficient proof. The check proves the quote appears in the
-source, not that the quote supports the claim, so a real quote pasted next to a false claim still
-passes. It makes inventing a fact from nothing hard; it does not make misattributing a real quote
-hard. That is the grounding-gate analogue of `honesty_gate.py`'s "real term in a false context".
+Presence alone left an obvious hole, and the interesting part is what it took to close some of it.
+A quote is necessary evidence, not sufficient proof: copy a real sentence out of the page, attach
+it to a claim it says nothing about, and `str in str` is satisfied. The gate now also compares the
+claim to its quote lexically (numbers in the claim must appear in the quote, two shared content
+terms minimum, word overlap over a threshold). Measured on a hand-labelled set of 36 cases whose
+quotes are all verbatim, that takes the share of surviving claims that a human agrees with from
+0.556 to 0.889, and throws away 4 of the 20 true ones (`tools/engine/eval/RESULTS.md`).
+
+Which is the honest shape of this kind of work. The second check is not a truth oracle, it is a
+second cheap postcondition that removes one family of failures and adds a false-reject cost, and
+the only way to say that with numbers instead of adjectives was to write down labelled cases first
+and run against them. What still passes: a real quote with an invented clause added, a negation
+flip, anything needing reasoning rather than word overlap. That is the grounding-gate analogue of
+`honesty_gate.py`'s "real term in a false context", narrower than it was, not gone.
 
 ## 4. Adversarial verification: default to refuting, not confirming
 
