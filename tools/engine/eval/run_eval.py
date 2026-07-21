@@ -81,7 +81,11 @@ def main() -> None:
         "The cases were written by hand for this repo. They are a fixed regression set chosen to "
         "include the failure shapes that matter (swapped number, unrelated quote, quote plus an "
         "invented clause, negation flip), not a random sample of anything, so these numbers say "
-        "what the gate does on these cases and nothing more.",
+        "what the gate does on these cases and nothing more. The second batch (S21-S26, M17-M28) "
+        "was written after the first results looked flattering: paraphrase positives with little "
+        "word overlap, and negatives that keep every number and most words of the quote while "
+        "changing what it says (entity, unit, hedge, quantifier, or which stat a number belongs "
+        "to). A harder set is supposed to make the gate look worse; that is the information.",
         "",
         HEADER,
     ]
