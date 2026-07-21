@@ -62,8 +62,10 @@ def test_gate_rejects_non_dict_items():
 
 
 def test_gate_passes_extra_keys_through():
-    source = "price is $899 today"
-    claims = [{"claim": "price", "verbatim_quote": "$899", "confidence": 0.9, "url": "x"}]
+    source = "the price is $899 today"
+    claims = [
+        {"claim": "the price is $899", "verbatim_quote": "price is $899", "confidence": 0.9, "url": "x"}
+    ]
     grounded, _ = ground.gate(claims, source)
     assert grounded[0]["confidence"] == 0.9
     assert grounded[0]["url"] == "x"
