@@ -3,9 +3,10 @@
 Machine-checkable gates for LLM agents: an honesty gate that keeps a generated resume from
 vouching for itself, an eligibility gate that blocks job classes a student applicant cannot be
 hired into, and a grounding gate that drops any web-extracted claim whose quote is not verbatim in
-the source, so a weak free model cannot invent a price or spec out of nothing. All three are pure
-code with tests, and each documents what it cannot catch: the grounding gate proves a quote is
-present, not that the quote supports the claim.
+the source or whose words do not match the quote, so a weak free model cannot invent a price or
+spec out of nothing, or hang a real quote off a claim it does not support. All three are pure code
+with tests, and each documents what it cannot catch: the grounding gate matches words, it does not
+read, so a quote carrying an invented extra clause still gets through.
 
 This is a small, hand-picked extract of a private personal automation project. The full project is a
 "life-operating-system" repo: a job search pipeline, a buying/research agent, a calendar and
@@ -35,10 +36,13 @@ real personal stakes, that is what is here.
 - **`tools/llm_router.py`** - a free-tier LLM router with a provider fallback chain (OpenRouter,
   Groq, Gemini), so bulk/cheap text work does not need a paid API budget.
 - **`tools/engine/`** - a small "discover, fetch, sanitize, ground, store, alert" intake-engine
-  skeleton, including a substring-based grounding gate (`ground.py`, tested in
-  `tools/engine/tests/`): a claim without a verbatim, found-in-source quote is dropped by code, not
-  by the model's judgment. Like the honesty gate, it documents its own blind spot in its docstring:
-  it proves the quote is present in the source, not that the quote actually supports the claim.
+  skeleton, including the grounding gate (`ground.py`, tested in `tools/engine/tests/`): a claim
+  is dropped by code, not by the model's judgment, unless its quote is verbatim in the source
+  *and* the claim's words line up with the quote's (every number in the claim present in the
+  quote, at least two shared content terms, word overlap over a threshold). Like the honesty gate
+  it documents its own blind spots, and unlike the honesty gate it has a measured cost: see
+  `tools/engine/eval/RESULTS.md` for what the support check catches, what it misses, and the four
+  true claims out of twenty it throws away.
 - **`ARCHITECTURE.md`** - the ideas that generalize: file-brain-as-source-of-truth, one writer per
   file for concurrent agents, machine-checkable agent contracts instead of prompt instructions,
   adversarial verification, human gates on irreversible actions, and a failure-mode ledger
@@ -110,9 +114,15 @@ python -m pytest projects/job-search/tests tools/engine/tests -q
 ```
 
 The two gates under `projects/job-search/tests` are pure, offline, stdlib-only. The grounding-gate
-tests under `tools/engine/tests` are also offline (they exercise the substring gate and the claim
-parsing; the live free-model call in `extract_grounded` is not run in tests). Both paths run in CI
-on every push (`.github/workflows/ci.yml`).
+tests under `tools/engine/tests` are also offline (they exercise the substring check, the support
+check and the claim parsing; the live free-model call in `extract_grounded` is not run in tests).
+Both paths run in CI on every push (`.github/workflows/ci.yml`).
+
+To re-run the grounding-gate evaluation and regenerate `tools/engine/eval/RESULTS.md`:
+
+```
+python tools/engine/eval/run_eval.py --write
+```
 
 ## Setup for the tools that need keys
 
