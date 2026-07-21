@@ -48,10 +48,14 @@ claim you like, and the gate is satisfied. So the gate also compares the claim a
 lexically (`claim_supported`): every standalone number in the claim has to appear in the quote,
 the two have to share at least two content terms, and their content-word overlap has to reach
 `SUPPORT_THRESHOLD` scored against the shorter side. This is still $0 and still deterministic, but
-it is word matching, not reading. On the 36 hand-labelled cases in `eval/relevance_cases.json`
+it is word matching, not reading. On the 54 hand-labelled cases in `eval/relevance_cases.json`
 (all with verbatim quotes, so presence alone keeps every one of them) it takes precision from
-0.556 to 0.889 and costs 4 of 20 true claims. The full table, and the list of cases it gets wrong,
-is in `eval/RESULTS.md`; regenerate with `python tools/engine/eval/run_eval.py --write`.
+0.481 to 0.600 and costs 8 of 26 true claims. That number used to read 0.889 on the first
+36 cases; the drop is not a regression in the code, it is 18 harder cases written specifically to
+sit in the gate's blind spots (entity and unit swaps, dropped hedges, a number attached to the
+wrong stat), and 10 of the 12 sneak-through negatives do sneak through. The full table, and the
+per-case list of what it gets wrong, is in `eval/RESULTS.md`; regenerate with
+`python tools/engine/eval/run_eval.py --write`.
 
 What it does not catch is worth saying plainly: a real quote with an invented clause bolted on, a
 negation flip, and anything that needs reasoning over the quote rather than word overlap. A

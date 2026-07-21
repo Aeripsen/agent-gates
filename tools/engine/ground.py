@@ -27,11 +27,16 @@ walks through, and all of it is in the measured eval set at tools/engine/eval/:
   because 11 is not in the quote. That is a false reject, not a catch, and it is the main cost of
   condition 1.
 - A CLAIM WHOSE WORDS ALL COME FROM THE QUOTE BUT WHOSE MEANING DOES NOT. Swapping "domestic" for
-  "international" while keeping the rest costs one term out of several.
+  "international", "kg" for "lb", or "A2" for "A3" costs one term out of several; dropping a hedge
+  like "up to" or "may be", or flipping "some" to "all", costs nothing because those words are
+  stopwords here. A number can even attach to the wrong stat ("recall to 89%" quoted from a
+  sentence where 89% is the precision) as long as it appears somewhere in the quote.
 
-Measured on the 36 hand-labelled cases in tools/engine/eval/relevance_cases.json, presence alone
-kept every misattributed claim (precision 0.556); presence plus support keeps 2 of 16 of them
-(precision 0.889) and drops 4 of 20 claims a human would have kept. Numbers and method are in
+Measured on the 54 hand-labelled cases in tools/engine/eval/relevance_cases.json, presence alone
+kept every misattributed claim (precision 0.481); presence plus support keeps 12 of 28 of them
+(precision 0.600) and drops 8 of 26 claims a human would have kept. On the first, easier 36 cases
+this read precision 0.889; the second batch of cases was written to land in the blind spots above
+and mostly does, which is what the set is for. Numbers and method are in
 tools/engine/eval/RESULTS.md. That set is hand-written and small, so treat it as a regression
 suite, not as a field accuracy estimate.
 

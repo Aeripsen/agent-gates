@@ -62,9 +62,11 @@ Presence alone left an obvious hole, and the interesting part is what it took to
 A quote is necessary evidence, not sufficient proof: copy a real sentence out of the page, attach
 it to a claim it says nothing about, and `str in str` is satisfied. The gate now also compares the
 claim to its quote lexically (numbers in the claim must appear in the quote, two shared content
-terms minimum, word overlap over a threshold). Measured on a hand-labelled set of 36 cases whose
+terms minimum, word overlap over a threshold). Measured on a hand-labelled set of 54 cases whose
 quotes are all verbatim, that takes the share of surviving claims that a human agrees with from
-0.556 to 0.889, and throws away 4 of the 20 true ones (`tools/engine/eval/RESULTS.md`).
+0.481 to 0.600, and throws away 8 of the 26 true ones (`tools/engine/eval/RESULTS.md`). On the
+first 36 cases the same check scored 0.889; growing the set with negatives aimed at its blind
+spots is what pulled the number down, and the lower number is the more useful one.
 
 Which is the honest shape of this kind of work. The second check is not a truth oracle, it is a
 second cheap postcondition that removes one family of failures and adds a false-reject cost, and
