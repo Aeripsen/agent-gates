@@ -1,5 +1,5 @@
 {
-  "about": "Hand-labelled (claim, quote, source) triples for measuring whether the grounding gate can tell a supporting quote from a misattributed one. Every quote here is verbatim in its source, so the old substring-only gate accepts all of them; the label is the human judgement of whether the quote actually supports the claim. Written by hand for this repo, not sampled from live traffic: it is a fixed regression set, not an estimate of field accuracy.",
+  "about": "Hand-labelled (claim, quote, source) triples for measuring whether the grounding gate can tell a supporting quote from a misattributed one. Every quote here is verbatim in its source, so the old substring-only gate accepts all of them; the label is the human judgement of whether the quote actually supports the claim. Written by hand for this repo, not sampled from live traffic: it is a fixed regression set, not an estimate of field accuracy. Cases S21-S26 and M17-M28 are a second, harder batch: paraphrase positives with little word overlap, and negatives built to slip the lexical check (a swapped number that is genuinely in the quote, an entity or unit swap, a dropped hedge or quantifier).",
   "cases": [
     {
       "id": "S1",
@@ -145,6 +145,51 @@
       "quote": "RTX 4060 with 8 GB of VRAM"
     },
     {
+      "id": "S21",
+      "label": "supported",
+      "note": "true paraphrase with zero shared content words except the subject",
+      "source": "The workshop is free of charge for students.",
+      "claim": "Students can attend the workshop at no cost.",
+      "quote": "free of charge for students"
+    },
+    {
+      "id": "S22",
+      "label": "supported",
+      "source": "Support ends for Windows 10 on October 14, 2025.",
+      "claim": "Windows 10 support ends on October 14, 2025.",
+      "quote": "Support ends for Windows 10 on October 14, 2025"
+    },
+    {
+      "id": "S23",
+      "label": "supported",
+      "note": "entry / cost synonym, only the number and one word tie them",
+      "source": "Tickets cost $25 at the door.",
+      "claim": "Entry is $25 at the door.",
+      "quote": "cost $25 at the door"
+    },
+    {
+      "id": "S24",
+      "label": "supported",
+      "source": "The trail is rated intermediate with 320 m of climbing.",
+      "claim": "The trail has 320 m of climbing.",
+      "quote": "320 m of climbing"
+    },
+    {
+      "id": "S25",
+      "label": "supported",
+      "source": "Refunds are issued to the original payment method within 5 business days.",
+      "claim": "Refunds take up to 5 business days.",
+      "quote": "within 5 business days"
+    },
+    {
+      "id": "S26",
+      "label": "supported",
+      "note": "allows / allowed do not stem to the same token",
+      "source": "The apartment allows cats but not dogs.",
+      "claim": "Cats are allowed.",
+      "quote": "allows cats"
+    },
+    {
       "id": "M1",
       "label": "misattributed",
       "note": "price swapped, quote is real",
@@ -261,6 +306,102 @@
       "source": "Python 3.13 removed the deprecated `imp` module.",
       "claim": "The imp module was deprecated in Python 3.13 but not removed.",
       "quote": "Python 3.13 removed the deprecated `imp` module"
+    },
+    {
+      "id": "M17",
+      "label": "misattributed",
+      "note": "old price presented as the sale price; both numbers really are in the quote",
+      "source": "Norco Charger A2 alloy hardtail, was $1,199, now $899.",
+      "claim": "The Charger A2 is on sale for $1,199.",
+      "quote": "Charger A2 alloy hardtail, was $1,199, now $899"
+    },
+    {
+      "id": "M18",
+      "label": "misattributed",
+      "note": "precision and recall swapped; both numbers are in the quote",
+      "source": "The new gate improves precision to 89% at the cost of recall dropping to 80%.",
+      "claim": "The gate improves recall to 89%.",
+      "quote": "improves precision to 89% at the cost of recall dropping to 80%"
+    },
+    {
+      "id": "M19",
+      "label": "misattributed",
+      "note": "model number swapped, A3 for A2; not a standalone number so the number check never sees it",
+      "source": "The Charger A2 comes with hydraulic disc brakes.",
+      "claim": "The Charger A3 comes with hydraulic disc brakes.",
+      "quote": "The Charger A2 comes with hydraulic disc brakes"
+    },
+    {
+      "id": "M20",
+      "label": "misattributed",
+      "note": "drops the up-to hedge; every claim word is in the quote",
+      "source": "Claims battery life of up to 18 hours depending on usage.",
+      "claim": "Battery life is 18 hours.",
+      "quote": "battery life of up to 18 hours"
+    },
+    {
+      "id": "M21",
+      "label": "misattributed",
+      "note": "drops the modal; may-be-eligible becomes are-eligible and both modal words are stopwords",
+      "source": "Applicants may be eligible for a fee waiver.",
+      "claim": "Applicants are eligible for a fee waiver.",
+      "quote": "may be eligible for a fee waiver"
+    },
+    {
+      "id": "M22",
+      "label": "misattributed",
+      "note": "waitlist swapped for registration, everything else identical",
+      "source": "The waitlist opens on June 1 at 10am.",
+      "claim": "Registration opens on June 1 at 10am.",
+      "quote": "The waitlist opens on June 1 at 10am"
+    },
+    {
+      "id": "M23",
+      "label": "misattributed",
+      "note": "some flipped to all; both quantifiers are stopwords so the swap is invisible to the gate",
+      "source": "Some sessions are recorded and posted afterwards.",
+      "claim": "All sessions are recorded and posted afterwards.",
+      "quote": "Some sessions are recorded and posted afterwards"
+    },
+    {
+      "id": "M24",
+      "label": "misattributed",
+      "note": "direction flipped, increased to decreased, one antonym in an otherwise identical sentence",
+      "source": "Prices increased by 12% this year.",
+      "claim": "Prices decreased by 12% this year.",
+      "quote": "Prices increased by 12% this year"
+    },
+    {
+      "id": "M25",
+      "label": "misattributed",
+      "note": "unit swapped, kg to lb; the number check only looks at digits",
+      "source": "The board weighs 3.2 kg.",
+      "claim": "The board weighs 3.2 lb.",
+      "quote": "The board weighs 3.2 kg"
+    },
+    {
+      "id": "M26",
+      "label": "misattributed",
+      "note": "paraphrase that shifts the subject: instructor tenure is not course availability",
+      "source": "The instructor has taught the course since 2019.",
+      "claim": "The course has been offered since 2019.",
+      "quote": "taught the course since 2019"
+    },
+    {
+      "id": "M27",
+      "label": "misattributed",
+      "note": "plain number swap, should be caught",
+      "source": "The deposit is $500 and fully refundable.",
+      "claim": "The deposit is $300 and fully refundable.",
+      "quote": "The deposit is $500 and fully refundable"
+    },
+    {
+      "id": "M28",
+      "label": "misattributed",
+      "note": "date digit swap, should be caught",
+      "source": "Early-bird pricing ends August 15.",
+      "claim": "Early-bird pricing ends August 25.",
+      "quote": "Early-bird pricing ends August 15"
     }
   ]
 }

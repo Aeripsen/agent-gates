@@ -257,6 +257,8 @@ def test_eval_set_quotes_are_all_verbatim():
 
 
 def test_eval_set_scores_match_the_committed_results():
+    # 54 cases since the harder second batch (S21-S26, M17-M28). The 10 extra kept-misattributed
+    # are negatives built to beat a lexical check, and they do; see RESULTS.md for the breakdown.
     kept_supported = sum(1 for c in _CASES if c["label"] == "supported" and _keep(c))
     kept_misattributed = sum(1 for c in _CASES if c["label"] == "misattributed" and _keep(c))
-    assert (kept_supported, kept_misattributed) == (16, 2)
+    assert (kept_supported, kept_misattributed) == (18, 12)
