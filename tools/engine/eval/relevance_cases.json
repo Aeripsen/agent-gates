@@ -1,0 +1,266 @@
+{
+  "about": "Hand-labelled (claim, quote, source) triples for measuring whether the grounding gate can tell a supporting quote from a misattributed one. Every quote here is verbatim in its source, so the old substring-only gate accepts all of them; the label is the human judgement of whether the quote actually supports the claim. Written by hand for this repo, not sampled from live traffic: it is a fixed regression set, not an estimate of field accuracy.",
+  "cases": [
+    {
+      "id": "S1",
+      "label": "supported",
+      "source": "Norco Charger A2 alloy hardtail, on sale for $899 (was $1,199). Free shipping in Canada.",
+      "claim": "The Norco Charger A2 is on sale for $899.",
+      "quote": "on sale for $899"
+    },
+    {
+      "id": "S2",
+      "label": "supported",
+      "source": "Norco Charger A2 alloy hardtail, on sale for $899 (was $1,199). Free shipping in Canada.",
+      "claim": "Shipping is free within Canada.",
+      "quote": "Free shipping in Canada"
+    },
+    {
+      "id": "S3",
+      "label": "supported",
+      "source": "The K2 Maysis snowboard boot ships in US sizes 7 through 13 and uses a Boa closure.",
+      "claim": "The Maysis boot uses a Boa closure.",
+      "quote": "uses a Boa closure"
+    },
+    {
+      "id": "S4",
+      "label": "supported",
+      "note": "needs range reasoning: 11 is inside 7 through 13",
+      "source": "The K2 Maysis snowboard boot ships in US sizes 7 through 13 and uses a Boa closure.",
+      "claim": "The boot is available in US size 11.",
+      "quote": "ships in US sizes 7 through 13"
+    },
+    {
+      "id": "S5",
+      "label": "supported",
+      "source": "Python 3.13 removed the deprecated `imp` module.",
+      "claim": "The imp module was removed in Python 3.13.",
+      "quote": "Python 3.13 removed the deprecated `imp` module"
+    },
+    {
+      "id": "S6",
+      "label": "supported",
+      "source": "We are hiring a Software Engineering Intern for Summer 2027 in Toronto.",
+      "claim": "The internship is for Summer 2027.",
+      "quote": "Intern for Summer 2027"
+    },
+    {
+      "id": "S7",
+      "label": "supported",
+      "note": "one shared content word, quote is a two-word fragment",
+      "source": "We are hiring a Software Engineering Intern for Summer 2027 in Toronto.",
+      "claim": "The role is based in Toronto.",
+      "quote": "in Toronto"
+    },
+    {
+      "id": "S8",
+      "label": "supported",
+      "source": "Battery life is rated at 18 hours of playback.",
+      "claim": "Battery life is 18 hours.",
+      "quote": "Battery life is rated at 18 hours"
+    },
+    {
+      "id": "S9",
+      "label": "supported",
+      "source": "The 2026 model weighs 13.2 kg without pedals.",
+      "claim": "The bike weighs 13.2 kg.",
+      "quote": "weighs 13.2 kg"
+    },
+    {
+      "id": "S10",
+      "label": "supported",
+      "source": "Returns accepted within 30 days of delivery.",
+      "claim": "Returns are accepted for 30 days.",
+      "quote": "Returns accepted within 30 days"
+    },
+    {
+      "id": "S11",
+      "label": "supported",
+      "source": "The library requires Node 20 or newer.",
+      "claim": "Node 20 or newer is required.",
+      "quote": "requires Node 20 or newer"
+    },
+    {
+      "id": "S12",
+      "label": "supported",
+      "source": "Tuition for the certificate is $2,400 for domestic students.",
+      "claim": "Domestic tuition is $2,400.",
+      "quote": "Tuition for the certificate is $2,400 for domestic students"
+    },
+    {
+      "id": "S13",
+      "label": "supported",
+      "source": "Doors open at 7pm; the talk starts at 7:30pm.",
+      "claim": "The talk starts at 7:30pm.",
+      "quote": "the talk starts at 7:30pm"
+    },
+    {
+      "id": "S14",
+      "label": "supported",
+      "source": "All three campuses are closed on the holiday Monday.",
+      "claim": "The campuses are closed on Monday.",
+      "quote": "campuses are closed on the holiday Monday"
+    },
+    {
+      "id": "S15",
+      "label": "supported",
+      "source": "The dataset contains 1.22 million labelled flows.",
+      "claim": "The dataset has 1.22 million flows.",
+      "quote": "contains 1.22 million labelled flows"
+    },
+    {
+      "id": "S16",
+      "label": "supported",
+      "note": "shipped / ships is the only tie between claim and quote after the place name",
+      "source": "Sold by ThirdParty Co. and shipped from Ontario.",
+      "claim": "The item ships from Ontario.",
+      "quote": "shipped from Ontario"
+    },
+    {
+      "id": "S17",
+      "label": "supported",
+      "source": "The bike comes with a 2 year frame warranty.",
+      "claim": "The frame warranty is 2 years.",
+      "quote": "2 year frame warranty"
+    },
+    {
+      "id": "S18",
+      "label": "supported",
+      "source": "Registration closes on August 15.",
+      "claim": "Registration closes August 15.",
+      "quote": "Registration closes on August 15"
+    },
+    {
+      "id": "S19",
+      "label": "supported",
+      "source": "The course is offered fully online.",
+      "claim": "The course is online.",
+      "quote": "course is offered fully online"
+    },
+    {
+      "id": "S20",
+      "label": "supported",
+      "source": "GPU: NVIDIA RTX 4060 with 8 GB of VRAM.",
+      "claim": "It has an RTX 4060 with 8 GB VRAM.",
+      "quote": "RTX 4060 with 8 GB of VRAM"
+    },
+    {
+      "id": "M1",
+      "label": "misattributed",
+      "note": "price swapped, quote is real",
+      "source": "Norco Charger A2 alloy hardtail, on sale for $899 (was $1,199). Free shipping in Canada.",
+      "claim": "The Norco Charger A2 is on sale for $699.",
+      "quote": "on sale for $899"
+    },
+    {
+      "id": "M2",
+      "label": "misattributed",
+      "source": "Norco Charger A2 alloy hardtail, on sale for $899 (was $1,199). Free shipping in Canada.",
+      "claim": "The bike has a carbon frame.",
+      "quote": "on sale for $899"
+    },
+    {
+      "id": "M3",
+      "label": "misattributed",
+      "source": "The K2 Maysis snowboard boot ships in US sizes 7 through 13 and uses a Boa closure.",
+      "claim": "The boot is fully waterproof.",
+      "quote": "uses a Boa closure"
+    },
+    {
+      "id": "M4",
+      "label": "misattributed",
+      "note": "shares the word closure only, and contradicts the quote",
+      "source": "The K2 Maysis snowboard boot ships in US sizes 7 through 13 and uses a Boa closure.",
+      "claim": "The boot has a traditional lace closure.",
+      "quote": "uses a Boa closure"
+    },
+    {
+      "id": "M5",
+      "label": "misattributed",
+      "source": "Doors open at 7pm; the talk starts at 7:30pm.",
+      "claim": "Doors open at 6pm.",
+      "quote": "Doors open at 7pm"
+    },
+    {
+      "id": "M6",
+      "label": "misattributed",
+      "source": "We are hiring a Software Engineering Intern for Summer 2027 in Toronto.",
+      "claim": "The role is a full-time new grad position.",
+      "quote": "Intern for Summer 2027"
+    },
+    {
+      "id": "M7",
+      "label": "misattributed",
+      "source": "We are hiring a Software Engineering Intern for Summer 2027 in Toronto.",
+      "claim": "The internship is in Vancouver.",
+      "quote": "in Toronto"
+    },
+    {
+      "id": "M8",
+      "label": "misattributed",
+      "source": "Battery life is rated at 18 hours of playback.",
+      "claim": "Battery life is 24 hours.",
+      "quote": "Battery life is rated at 18 hours"
+    },
+    {
+      "id": "M9",
+      "label": "misattributed",
+      "note": "quote supports the first half, the refund clause is invented",
+      "source": "Returns accepted within 30 days of delivery.",
+      "claim": "Returns are accepted within 30 days and return shipping is refunded.",
+      "quote": "Returns accepted within 30 days"
+    },
+    {
+      "id": "M10",
+      "label": "misattributed",
+      "source": "The library requires Node 20 or newer.",
+      "claim": "The library requires Node 22 or newer.",
+      "quote": "requires Node 20 or newer"
+    },
+    {
+      "id": "M11",
+      "label": "misattributed",
+      "note": "swaps domestic for international, every other token is real",
+      "source": "Tuition for the certificate is $2,400 for domestic students.",
+      "claim": "International tuition is $2,400.",
+      "quote": "Tuition for the certificate is $2,400 for domestic students"
+    },
+    {
+      "id": "M12",
+      "label": "misattributed",
+      "source": "The dataset contains 1.22 million labelled flows.",
+      "claim": "The dataset is publicly available.",
+      "quote": "contains 1.22 million labelled flows"
+    },
+    {
+      "id": "M13",
+      "label": "misattributed",
+      "source": "GPU: NVIDIA RTX 4060 with 8 GB of VRAM.",
+      "claim": "It has 16 GB of system RAM.",
+      "quote": "RTX 4060 with 8 GB of VRAM"
+    },
+    {
+      "id": "M14",
+      "label": "misattributed",
+      "note": "widens one day to a week using the same words",
+      "source": "All three campuses are closed on the holiday Monday.",
+      "claim": "The campuses are closed all week.",
+      "quote": "campuses are closed on the holiday Monday"
+    },
+    {
+      "id": "M15",
+      "label": "misattributed",
+      "source": "Sold by ThirdParty Co. and shipped from Ontario.",
+      "claim": "The item is sold by the manufacturer.",
+      "quote": "shipped from Ontario"
+    },
+    {
+      "id": "M16",
+      "label": "misattributed",
+      "note": "negation flip, near-total token overlap with the quote",
+      "source": "Python 3.13 removed the deprecated `imp` module.",
+      "claim": "The imp module was deprecated in Python 3.13 but not removed.",
+      "quote": "Python 3.13 removed the deprecated `imp` module"
+    }
+  ]
+}
