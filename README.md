@@ -41,8 +41,8 @@ real personal stakes, that is what is here.
   *and* the claim's words line up with the quote's (every number in the claim present in the
   quote, at least two shared content terms, word overlap over a threshold). Like the honesty gate
   it documents its own blind spots, and unlike the honesty gate it has a measured cost: see
-  `tools/engine/eval/RESULTS.md` for what the support check catches, what it misses, and the four
-  true claims out of twenty it throws away.
+  `tools/engine/eval/RESULTS.md` for what the support check catches, what it misses, and the eight
+  true claims out of twenty-six it throws away.
 - **`ARCHITECTURE.md`** - the ideas that generalize: file-brain-as-source-of-truth, one writer per
   file for concurrent agents, machine-checkable agent contracts instead of prompt instructions,
   adversarial verification, human gates on irreversible actions, and a failure-mode ledger
