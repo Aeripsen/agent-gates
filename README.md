@@ -1,5 +1,7 @@
 # agent-gates
 
+[![tests](https://github.com/Aeripsen/agent-gates/actions/workflows/ci.yml/badge.svg)](https://github.com/Aeripsen/agent-gates/actions/workflows/ci.yml)
+
 Machine-checkable gates for LLM agents: an honesty gate that keeps a generated resume from
 vouching for itself, an eligibility gate that blocks job classes a student applicant cannot be
 hired into, and a grounding gate that drops any web-extracted claim whose quote is not verbatim in
@@ -113,8 +115,9 @@ pip install pytest
 python -m pytest projects/job-search/tests tools/engine/tests -q
 ```
 
-The two gates under `projects/job-search/tests` are pure, offline, stdlib-only. The grounding-gate
-tests under `tools/engine/tests` are also offline (they exercise the substring check, the support
+The full suite is 104 tests. The two gates under `projects/job-search/tests` are 63 of them
+(honesty 17, eligibility 46) and are pure, offline, stdlib-only. The grounding-gate tests under
+`tools/engine/tests` are the other 41, also offline (they exercise the substring check, the support
 check and the claim parsing; the live free-model call in `extract_grounded` is not run in tests).
 Both paths run in CI on every push (`.github/workflows/ci.yml`).
 
