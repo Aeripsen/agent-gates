@@ -21,6 +21,13 @@ DISCOVER  -> FETCH      -> SANITIZE   -> EXTRACT+GROUND -> STORE   -> ALERT/BRIE
   cleaned. Strip HTML comments, `<script>`, tags, before anything reaches a model. This is the
   layer that stops indirect prompt injection hidden in a scraped page from ever reaching the
   model doing extraction.
+- **Injection check** (`injection_gate.py`) - the format-independent second layer. Sanitize only
+  runs on HTML and only removes hiding places; visible instruction text survives it, and a JSON
+  response skips it entirely. `injection_gate.gate()` scans every fetched text for override
+  phrasing, chat-template role tokens, invisible Unicode, markdown-image exfiltration links and
+  send-to-an-address requests, and splits outputs into clean and flagged. Flagged text goes to a
+  human or a tool-less model, never to a model that can act. It is a marker list, so paraphrase,
+  other languages and encodings get past it; the module docstring lists them.
 - **Extract + ground** (`ground.py`) - a model returns a strict schema (claim + **verbatim
   quote**). Two deterministic Python post-conditions: the quote must exist in the sanitized
   source text, and the claim's words must match the quote's. Fail either and the claim is
@@ -83,7 +90,7 @@ instructions" into your extraction pipeline.
 
 ## What is in this repo, and what is not
 
-Included: `sanitize.py`, `ground.py`, `store.py`, `alert.py`, and two adapters
+Included: `sanitize.py`, `injection_gate.py`, `ground.py`, `store.py`, `alert.py`, and two adapters
 (`adapters/shopify.py` for structured-JSON catalogs, `adapters/brave.py` for web discovery) as
 worked examples of the FETCH stage.
 
