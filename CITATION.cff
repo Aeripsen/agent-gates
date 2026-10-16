@@ -9,8 +9,8 @@ repository-code: "https://github.com/Aeripsen/agent-gates"
 license: MIT
 date-released: "2026-10-16"
 abstract: >-
-  Four small, deterministic, tested checks that sit after a language model and before its output
-  can act: an honesty gate for generated resume text, an eligibility gate on a job-queueing tool
+  Four small, deterministic, tested checks on the edges of a language model, three on its output
+  before that output can act and one on tool output before the model reads it: an honesty gate for generated resume text, an eligibility gate on a job-queueing tool
   call, a grounding gate that keeps only claims whose quote is verbatim in the source and lexically
   supports the claim, and an injection gate that flags instruction-shaped text in tool output. Each
   documents the attacks and errors it cannot catch.
