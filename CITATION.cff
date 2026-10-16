@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use or refer to this software, please cite it as below."
+title: "agent-gates: machine-checkable gates for LLM agents"
+type: software
+authors:
+  - family-names: Jafari
+    given-names: Sepehr
+repository-code: "https://github.com/Aeripsen/agent-gates"
+license: MIT
+date-released: "2026-10-16"
+abstract: >-
+  Four small, deterministic, tested checks that sit after a language model and before its output
+  can act: an honesty gate for generated resume text, an eligibility gate on a job-queueing tool
+  call, a grounding gate that keeps only claims whose quote is verbatim in the source and lexically
+  supports the claim, and an injection gate that flags instruction-shaped text in tool output. Each
+  documents the attacks and errors it cannot catch.
+keywords:
+  - llm agents
+  - prompt injection
+  - tool use
+  - grounding
+  - ai safety
