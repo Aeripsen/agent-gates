@@ -208,17 +208,20 @@ them is an upper-end stress number, not the rate on typical tool output.
 
 Neither is fixed in this change; gate behaviour is unchanged.
 
-1. `ground._NUMBER` has a left boundary and no right boundary, so "2P", "4K" or "1900s" in a claim
-   yields the number 2, 4 or 1900, and that number must then appear in the quote. The module
-   docstring says the check is on "standalone" numbers, and the same docstring relies on "A2" not
-   being one. In this corpus it causes 2 false rejects (P01-1, P01-2) and is the only reason 2
-   unsupported claims are rejected (P01-4, vitaminc-53302). The CHANGELOG entry of 2026-10-16
-   already notes the "2P" case.
+1. `ground._NUMBER` has a left boundary and no right boundary, so "2P" or "4K" in a claim yields
+   the number 2 or 4, and that number must then appear in the quote, while "A2" yields nothing.
+   The module docstring calls the check one on "standalone" numbers and relies on "A2" not being
+   one. Rerunning the corpus with a right boundary added (`(?![a-z0-9])`, in a scratch run, not
+   committed) changes 3 decisions: P01-1 and P01-2 (supported) go from rejected to accepted, and
+   P01-4 (unsupported) goes from rejected to accepted. So the fix removes 2 false rejects and adds
+   1 false accept. The CHANGELOG entry of 2026-10-16 already notes the "2P" case.
 2. `injection_gate._ZERO_WIDTH` contains U+200C (zero-width non-joiner). Persian, Urdu and
    Kurdish spelling uses it inside ordinary words, so every Persian text in the benign set that
    contains one is flagged as `invisible` (benign-55, 56, 58). The module already leaves out U+200D
-   for the same reason with emoji. The one Persian attack in the corpus (cons-29) is flagged only
-   because of this character, not because of its content.
+   for the same reason with emoji. Rerunning with U+200C removed from the set (scratch run, not
+   committed) changes 4 decisions: benign-55, 56 and 58 are no longer flagged, and the one Persian
+   attack (cons-29) is no longer flagged either, because this character was its only marker. So
+   the fix removes 3 false rejects and adds 1 false accept.
 
 ## What this evaluation does not cover
 

@@ -10,7 +10,7 @@ Dated entries, newest first, written from the commit history. Test counts are wh
   123 attacks, 81 benign), results in `tools/engine/eval/GATE_RESULTS.md`, method and licences in
   `docs/EVAL.md`. False-accept and false-reject rates with Wilson intervals, by error type and
   by source. Gate behaviour is unchanged.
-- Found by the evaluation, not fixed: the number check reads "2P" or "1900s" as a number, and
+- Found by the evaluation, not fixed: the number check reads the "2" in "2P" as a number, and
   the injection gate flags ordinary Persian text because U+200C is on its zero-width list.
 - Tests: 136 to 152.
 

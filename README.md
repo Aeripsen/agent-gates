@@ -142,7 +142,8 @@ intervals.
 
 Grounding gate, false-accept rate by error type: changed number 10/52, unsupported inference
 2/19, entity swapped 25/42, unit swapped 4/7, negation flip 12/19, overclaim 17/22, invented
-extra clause 10/10. Unrelated quotes (0/6) and quotes not in the source (0/2) are always caught.
+extra clause 10/10. Unrelated quotes were caught in all 6 cases and quotes not in the source in
+both of 2, which is too few to call a rate.
 False-reject rate by kind of supported claim: near-copy 1/53, paraphrase 45/70, needs reasoning
 15/15.
 
@@ -182,6 +183,9 @@ Limits of these numbers:
   written by the same person, who had read the gates' code; no second annotator checked labels.
   60 grounding cases come from VitaminC and 90 attacks from four public datasets, chosen by a fixed
   index rule before scoring.
+- Labels kept as published: some deepset rows labelled injection are plain task prompts
+  ("translate to polish"), which raises the public false-accept rate; they were kept because
+  dropping rows after seeing the result would bias it.
 - Mix: the share of bad items was set by hand, so precision is not a field estimate. The benign
   injection set was picked to look suspicious, so its FRR is a stress number, not the rate on
   typical tool output.
