@@ -44,9 +44,11 @@ And it has a false-positive cost: a security blog post that quotes "ignore previ
 is flagged, because a quoted attack and a live one look the same to a model. That is deliberate.
 A flagged text is quarantined for a human or a tool-less model, not deleted.
 
-No labelled evaluation set exists for this gate yet, so there is no precision or recall number to
-quote. The tests in tests/test_injection_gate.py pin what it flags, what it passes, and the known
-misses above as passing cases, so a change that closes or opens one shows up as a test diff.
+Measured on the labelled cases in tools/engine/eval/data/ (method in docs/EVAL.md, numbers in
+tools/engine/eval/GATE_RESULTS.md): it misses 74 of 90 attacks taken from four public benchmarks,
+and flags 58 of 81 benign texts chosen to look suspicious. The tests in
+tests/test_injection_gate.py pin what it flags, what it passes, and the known misses above as
+passing cases, so a change that closes or opens one shows up as a test diff.
 """
 from __future__ import annotations
 
