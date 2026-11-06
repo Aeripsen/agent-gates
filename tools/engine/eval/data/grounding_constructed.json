@@ -1,0 +1,2399 @@
+{
+ "about": "Hand-written (passage, quote, claim) cases for the grounding gate, written for this repo. The passages are invented product listings, policies, notices and short factual statements, not copied from anywhere. hard marks a near-miss (most of the quote's words kept, meaning changed) and was set when the case was written, before the gate was run.",
+ "passages": {
+  "P01": "The Ridgeline 2P tent weighs 1.6 kg and packs to 45 x 15 cm. It is on sale for $249, down from $329. Free returns within 30 days of delivery.",
+  "P02": "Python 3.12 removed the distutils package, which had been deprecated since Python 3.10.",
+  "P03": "The museum is open Tuesday to Sunday from 10:00 to 17:00. It is closed on Mondays and on 25 December. Admission is free for visitors under 18.",
+  "P04": "In the trial, 412 participants received the vaccine and 405 received a placebo. Efficacy against symptomatic infection was 71% after two doses.",
+  "P05": "The Northline bus runs every 15 minutes on weekdays and every 30 minutes on weekends. The last departure from Central Station is at 23:40.",
+  "P06": "The K2 Maysis boot ships in US sizes 7 through 13 and uses a Boa closure. It is not available in wide widths.",
+  "P07": "The library lends up to 12 items per card for 21 days. Items can be renewed twice unless another member has placed a hold.",
+  "P08": "Our API allows 600 requests per minute per key. Requests over the limit receive HTTP 429 and should be retried after the Retry-After interval.",
+  "P09": "Marta Lindqvist joined the company in 2019 as head of research. She previously led the imaging group at Uppsala University for six years.",
+  "P10": "The water heater has a 50-gallon tank and a 4500 W element. Recovery rate is 21 gallons per hour at a 90 F temperature rise.",
+  "P11": "Applications for the Summer 2027 internship close on 15 January 2027. Applicants must be enrolled in a degree program at the time of the internship.",
+  "P12": "The recipe serves four. Bake at 180 C for 35 to 40 minutes, until a skewer comes out clean.",
+  "P13": "The study found that the new model improved recall to 0.84 while precision fell from 0.91 to 0.88.",
+  "P14": "Standard shipping within Canada takes 3 to 5 business days. International orders ship by courier and take 7 to 14 business days.",
+  "P15": "The board approved a dividend of 0.42 per share, payable on 12 March to shareholders of record on 28 February.",
+  "P16": "The bridge will be closed to cars from 1 June to 30 September for deck repairs. Pedestrians and cyclists can still cross on the east sidewalk.",
+  "P17": "Firmware 2.4 adds support for WPA3 and fixes a bug that drained the battery in standby. It does not change the Bluetooth stack.",
+  "P18": "Patients may experience mild headache or nausea in the first week. Severe reactions are rare and occurred in fewer than 1 in 1,000 patients in trials.",
+  "P19": "The apartment has two bedrooms, one bathroom and a balcony facing the courtyard. Rent is 1,850 per month; heat and water are included, electricity is not.",
+  "P20": "Version 5 of the library drops support for Node 16. Node 18 or newer is required.",
+  "P21": "The survey of 1,200 adults found that 38% had used a generative AI tool at work in the past month. The margin of error is plus or minus 3 points.",
+  "P22": "The ferry departs Horseshoe Bay at 07:20 and arrives at Departure Bay at 09:00. Reservations are recommended on summer weekends.",
+  "P23": "Cast iron pans should be dried immediately after washing and lightly oiled. Do not put them in the dishwasher.",
+  "P24": "The 2026 model weighs 13.2 kg without pedals and has a 12-speed drivetrain. The frame is aluminium; the fork is carbon.",
+  "P25": "Students who complete at least 80% of the labs may be eligible for a certificate. Certificates are issued within 30 days of the course end date.",
+  "P26": "The council voted 7 to 2 to approve the bike lane on Elm Street. Construction is expected to start next spring, pending funding.",
+  "P27": "The laptop has 16 GB of RAM, soldered to the board, and a 512 GB SSD that can be replaced. Battery life is rated at up to 14 hours of video playback.",
+  "P28": "The hotel's pool is open from May to September. Pets under 10 kg are welcome for a fee of 25 per night.",
+  "P29": "The Rust 2024 edition was stabilised in Rust 1.85, released in February 2025.",
+  "P30": "Lab results are usually available within 48 hours. Results that need a specialist review can take up to a week.",
+  "P31": "The coffee is a single-origin washed Ethiopian, roasted light. Tasting notes: jasmine, lemon, black tea.",
+  "P32": "The parental leave policy gives birth parents 17 weeks of paid leave and other parents 8 weeks. Leave must be taken within 12 months of the birth or adoption.",
+  "P33": "The model was trained on 2.1 million labelled images and evaluated on a held-out set of 50,000. Top-1 accuracy on the held-out set was 82.4%.",
+  "P34": "Tickets are refundable up to 48 hours before the show. After that, they can be exchanged for another date but not refunded.",
+  "P35": "Kettle Lake is 4.2 km long and reaches a maximum depth of 38 m. Swimming is allowed at the north beach; motorboats are prohibited.",
+  "P36": "The startup raised 12 million in a Series A led by Northwind Ventures. Existing investors Halcyon and Bramble also participated.",
+  "P37": "To reset the router, hold the reset button for 10 seconds until the light blinks amber. This erases all custom settings.",
+  "P38": "The paper reports a 23% reduction in hospital readmissions among patients enrolled in the program, compared with a matched control group. The study was observational.",
+  "P39": "The phone is rated IP68: dust-tight and protected against immersion in 1.5 m of fresh water for up to 30 minutes.",
+  "P40": "Registration for the spring session opens on 3 March. Members get one week of early access before registration opens to the public.",
+  "P41": "The software is free for personal use. Commercial use requires a licence, priced at 99 per seat per year.",
+  "P42": "The trail is 11 km return with 600 m of elevation gain. Dogs must be on a leash. The upper section is closed from November to April because of avalanche risk.",
+  "P43": "The update to the privacy policy takes effect on 1 May. We will no longer share location data with advertising partners.",
+  "P44": "The gallery is accessible by elevator from the main lobby. Wheelchairs are available to borrow at the front desk free of charge.",
+  "P45": "During the outage, about 18% of requests in the eu-west region failed for 42 minutes. No data was lost.",
+  "P46": "The scholarship covers tuition for up to four years. It does not cover housing or textbooks.",
+  "P47": "The vacuum's battery lasts about 60 minutes on eco mode and 12 minutes on max. A full charge takes 4 hours.",
+  "P48": "The contract renews automatically for one-year terms unless either party gives 60 days' written notice before the renewal date.",
+  "P49": "Mount Robson is the highest peak in the Canadian Rockies at 3,954 m. The first confirmed ascent was in 1913.",
+  "P50": "The cafe uses oat milk by default. Dairy milk is available on request at no extra charge; almond milk costs 0.50 more.",
+  "P51": "The election turnout was 61.3%, up from 58.0% four years earlier. The incumbent won with 47% of the vote.",
+  "P52": "The warranty covers manufacturing defects for two years from the date of purchase. It does not cover water damage or normal wear."
+ },
+ "cases": [
+  {
+   "id": "P01-1",
+   "passage": "P01",
+   "quote": "It is on sale for $249",
+   "claim": "The Ridgeline 2P tent is on sale for $249.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P01-2",
+   "passage": "P01",
+   "quote": "weighs 1.6 kg",
+   "claim": "The Ridgeline 2P weighs 1.6 kg.",
+   "label": "supported",
+   "error_type": "fragment",
+   "hard": false
+  },
+  {
+   "id": "P01-3",
+   "passage": "P01",
+   "quote": "It is on sale for $249",
+   "claim": "The Ridgeline 2P tent is on sale for $229.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P01-4",
+   "passage": "P01",
+   "quote": "It is on sale for $249, down from $329",
+   "claim": "The Ridgeline 2P tent is on sale for $329, down from $249.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": true
+  },
+  {
+   "id": "P01-5",
+   "passage": "P01",
+   "quote": "Free returns within 30 days of delivery",
+   "claim": "Free returns within 30 days of delivery, and return shipping is prepaid.",
+   "label": "unsupported",
+   "error_type": "fabricated_detail",
+   "hard": true
+  },
+  {
+   "id": "P02-1",
+   "passage": "P02",
+   "quote": "Python 3.12 removed the distutils package",
+   "claim": "Python 3.12 removed the distutils package.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P02-2",
+   "passage": "P02",
+   "quote": "which had been deprecated since Python 3.10",
+   "claim": "distutils was deprecated starting in Python 3.10.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P02-3",
+   "passage": "P02",
+   "quote": "Python 3.12 removed the distutils package, which had been deprecated since Python 3.10",
+   "claim": "Python 3.12 deprecated the distutils package but did not remove it.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P02-4",
+   "passage": "P02",
+   "quote": "Python 3.12 removed the distutils package",
+   "claim": "Python 3.11 removed the distutils package.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P02-5",
+   "passage": "P02",
+   "quote": "Python 3.12 removed the distutils package",
+   "claim": "Python 3.12 removed the asyncio package.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P03-1",
+   "passage": "P03",
+   "quote": "It is closed on Mondays",
+   "claim": "The museum is closed on Mondays.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P03-2",
+   "passage": "P03",
+   "quote": "Admission is free for visitors under 18",
+   "claim": "Visitors younger than 18 get in free.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P03-3",
+   "passage": "P03",
+   "quote": "It is closed on Mondays",
+   "claim": "The museum is closed on Tuesdays.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P03-4",
+   "passage": "P03",
+   "quote": "Admission is free for visitors under 18",
+   "claim": "Admission is free for all visitors.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P03-5",
+   "passage": "P03",
+   "quote": "open Tuesday to Sunday from 10:00 to 17:00",
+   "claim": "The museum is busiest on Sundays.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P04-1",
+   "passage": "P04",
+   "quote": "Efficacy against symptomatic infection was 71% after two doses",
+   "claim": "Efficacy against symptomatic infection was 71% after two doses.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P04-2",
+   "passage": "P04",
+   "quote": "412 participants received the vaccine and 405 received a placebo",
+   "claim": "The placebo group had 405 participants.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P04-3",
+   "passage": "P04",
+   "quote": "Efficacy against symptomatic infection was 71% after two doses",
+   "claim": "Efficacy against symptomatic infection was 71% after one dose.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": true
+  },
+  {
+   "id": "P04-4",
+   "passage": "P04",
+   "quote": "Efficacy against symptomatic infection was 71% after two doses",
+   "claim": "Efficacy against all infection was 71% after two doses.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P04-5",
+   "passage": "P04",
+   "quote": "412 participants received the vaccine and 405 received a placebo",
+   "claim": "405 participants received the vaccine and 412 received a placebo.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": true
+  },
+  {
+   "id": "P05-1",
+   "passage": "P05",
+   "quote": "The last departure from Central Station is at 23:40",
+   "claim": "The last Northline bus leaves Central Station at 23:40.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P05-2",
+   "passage": "P05",
+   "quote": "every 30 minutes on weekends",
+   "claim": "On weekends the Northline bus comes twice an hour.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P05-3",
+   "passage": "P05",
+   "quote": "The last departure from Central Station is at 23:40",
+   "claim": "The last departure from Central Station is at 00:40.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P05-4",
+   "passage": "P05",
+   "quote": "runs every 15 minutes on weekdays and every 30 minutes on weekends",
+   "claim": "The Northline bus runs every 15 minutes on weekends and every 30 minutes on weekdays.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P05-5",
+   "passage": "P05",
+   "quote": "runs every 15 minutes on weekdays",
+   "claim": "The Northline bus is never late on weekdays.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P06-1",
+   "passage": "P06",
+   "quote": "uses a Boa closure",
+   "claim": "The Maysis boot uses a Boa closure.",
+   "label": "supported",
+   "error_type": "fragment",
+   "hard": false
+  },
+  {
+   "id": "P06-2",
+   "passage": "P06",
+   "quote": "ships in US sizes 7 through 13",
+   "claim": "The Maysis comes in US size 10.",
+   "label": "supported",
+   "error_type": "reasoning",
+   "hard": false
+  },
+  {
+   "id": "P06-3",
+   "passage": "P06",
+   "quote": "It is not available in wide widths",
+   "claim": "The Maysis is available in wide widths.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P06-4",
+   "passage": "P06",
+   "quote": "ships in US sizes 7 through 13",
+   "claim": "The Maysis boot ships in US sizes 7 through 15.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P06-5",
+   "passage": "P06",
+   "quote": "uses a Boa closure",
+   "claim": "The Maysis boot uses a lace closure.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": false
+  },
+  {
+   "id": "P07-1",
+   "passage": "P07",
+   "quote": "lends up to 12 items per card for 21 days",
+   "claim": "The library lends up to 12 items per card for 21 days.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P07-2",
+   "passage": "P07",
+   "quote": "Items can be renewed twice unless another member has placed a hold",
+   "claim": "If nobody has a hold on an item, you can renew it two times.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P07-3",
+   "passage": "P07",
+   "quote": "lends up to 12 items per card",
+   "claim": "The library lends 12 items per card.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P07-4",
+   "passage": "P07",
+   "quote": "Items can be renewed twice unless another member has placed a hold",
+   "claim": "Items can be renewed twice even if another member has placed a hold.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P07-5",
+   "passage": "P07",
+   "quote": "for 21 days",
+   "claim": "Loans last 21 days and late fees are waived for students.",
+   "label": "unsupported",
+   "error_type": "fabricated_detail",
+   "hard": false
+  },
+  {
+   "id": "P08-1",
+   "passage": "P08",
+   "quote": "Requests over the limit receive HTTP 429",
+   "claim": "Requests over the limit receive HTTP 429.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P08-2",
+   "passage": "P08",
+   "quote": "Our API allows 600 requests per minute per key",
+   "claim": "Each API key can make 600 requests a minute.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P08-3",
+   "passage": "P08",
+   "quote": "Our API allows 600 requests per minute per key",
+   "claim": "Our API allows 600 requests per second per key.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": true
+  },
+  {
+   "id": "P08-4",
+   "passage": "P08",
+   "quote": "Requests over the limit receive HTTP 429",
+   "claim": "Requests over the limit receive HTTP 403.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P08-5",
+   "passage": "P08",
+   "quote": "Our API allows 600 requests per minute per key",
+   "claim": "Our API allows 600 requests per minute per account.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P09-1",
+   "passage": "P09",
+   "quote": "Marta Lindqvist joined the company in 2019 as head of research",
+   "claim": "Marta Lindqvist joined the company in 2019 as head of research.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P09-2",
+   "passage": "P09",
+   "quote": "She previously led the imaging group at Uppsala University for six years",
+   "claim": "Before joining, Lindqvist ran Uppsala University's imaging group.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P09-3",
+   "passage": "P09",
+   "quote": "led the imaging group at Uppsala University for six years",
+   "claim": "Lindqvist led the imaging group at Uppsala University for eight years.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": true
+  },
+  {
+   "id": "P09-4",
+   "passage": "P09",
+   "quote": "led the imaging group at Uppsala University",
+   "claim": "Lindqvist led the imaging group at Lund University.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P09-5",
+   "passage": "P09",
+   "quote": "joined the company in 2019 as head of research",
+   "claim": "Lindqvist founded the company's research division in 2019.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P10-1",
+   "passage": "P10",
+   "quote": "50-gallon tank",
+   "claim": "The heater's tank holds 50 gallons.",
+   "label": "supported",
+   "error_type": "fragment",
+   "hard": false
+  },
+  {
+   "id": "P10-2",
+   "passage": "P10",
+   "quote": "Recovery rate is 21 gallons per hour at a 90 F temperature rise",
+   "claim": "Recovery rate is 21 gallons per hour at a 90 F rise.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P10-3",
+   "passage": "P10",
+   "quote": "a 50-gallon tank",
+   "claim": "The water heater has a 50-liter tank.",
+   "label": "unsupported",
+   "error_type": "unit_changed",
+   "hard": true
+  },
+  {
+   "id": "P10-4",
+   "passage": "P10",
+   "quote": "Recovery rate is 21 gallons per hour at a 90 F temperature rise",
+   "claim": "Recovery rate is 90 gallons per hour at a 21 F temperature rise.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": true
+  },
+  {
+   "id": "P10-5",
+   "passage": "P10",
+   "quote": "a 4500 W element",
+   "claim": "The water heater has a 4500 kW element.",
+   "label": "unsupported",
+   "error_type": "unit_changed",
+   "hard": true
+  },
+  {
+   "id": "P11-1",
+   "passage": "P11",
+   "quote": "Applications for the Summer 2027 internship close on 15 January 2027",
+   "claim": "Applications for the Summer 2027 internship close on 15 January 2027.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P11-2",
+   "passage": "P11",
+   "quote": "Applicants must be enrolled in a degree program at the time of the internship",
+   "claim": "Interns need to be enrolled students while the internship runs.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P11-3",
+   "passage": "P11",
+   "quote": "close on 15 January 2027",
+   "claim": "Applications close on 15 February 2027.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": true
+  },
+  {
+   "id": "P11-4",
+   "passage": "P11",
+   "quote": "Applicants must be enrolled in a degree program",
+   "claim": "Applicants must be studying computer science.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P11-5",
+   "passage": "P11",
+   "quote": "Applications for the Summer 2027 internship close on 15 January 2027",
+   "claim": "Applications for the Summer 2027 internship close on 15 January 2027 and the internship is paid.",
+   "label": "unsupported",
+   "error_type": "fabricated_detail",
+   "hard": true
+  },
+  {
+   "id": "P12-1",
+   "passage": "P12",
+   "quote": "Bake at 180 C for 35 to 40 minutes",
+   "claim": "Bake at 180 C for 35 to 40 minutes.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P12-2",
+   "passage": "P12",
+   "quote": "The recipe serves four",
+   "claim": "This recipe makes four servings.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P12-3",
+   "passage": "P12",
+   "quote": "Bake at 180 C",
+   "claim": "Bake at 180 F.",
+   "label": "unsupported",
+   "error_type": "unit_changed",
+   "hard": true
+  },
+  {
+   "id": "P12-4",
+   "passage": "P12",
+   "quote": "The recipe serves four",
+   "claim": "The recipe serves six.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P12-5",
+   "passage": "P12",
+   "quote": "for 35 to 40 minutes",
+   "claim": "Bake for exactly 40 minutes.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": false
+  },
+  {
+   "id": "P13-1",
+   "passage": "P13",
+   "quote": "improved recall to 0.84",
+   "claim": "The new model improved recall to 0.84.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P13-2",
+   "passage": "P13",
+   "quote": "precision fell from 0.91 to 0.88",
+   "claim": "Precision dropped by three points, to 0.88.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P13-3",
+   "passage": "P13",
+   "quote": "the new model improved recall to 0.84 while precision fell from 0.91 to 0.88",
+   "claim": "The new model improved precision to 0.84 while recall fell from 0.91 to 0.88.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P13-4",
+   "passage": "P13",
+   "quote": "precision fell from 0.91 to 0.88",
+   "claim": "Precision rose from 0.88 to 0.91.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P13-5",
+   "passage": "P13",
+   "quote": "improved recall to 0.84",
+   "claim": "The new model is better than the old one overall.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P14-1",
+   "passage": "P14",
+   "quote": "Standard shipping within Canada takes 3 to 5 business days",
+   "claim": "Standard shipping within Canada takes 3 to 5 business days.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P14-2",
+   "passage": "P14",
+   "quote": "International orders ship by courier",
+   "claim": "Orders going abroad are sent by courier.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P14-3",
+   "passage": "P14",
+   "quote": "Standard shipping within Canada takes 3 to 5 business days",
+   "claim": "Standard shipping to the United States takes 3 to 5 business days.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P14-4",
+   "passage": "P14",
+   "quote": "take 7 to 14 business days",
+   "claim": "International orders take 7 to 10 business days.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P14-5",
+   "passage": "P14",
+   "quote": "International orders ship by courier",
+   "claim": "International orders ship by courier with free tracking and insurance.",
+   "label": "unsupported",
+   "error_type": "fabricated_detail",
+   "hard": false
+  },
+  {
+   "id": "P15-1",
+   "passage": "P15",
+   "quote": "a dividend of 0.42 per share",
+   "claim": "The board approved a dividend of 0.42 per share.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P15-2",
+   "passage": "P15",
+   "quote": "payable on 12 March",
+   "claim": "The dividend will be paid on 12 March.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P15-3",
+   "passage": "P15",
+   "quote": "payable on 12 March to shareholders of record on 28 February",
+   "claim": "The dividend is payable on 28 February to shareholders of record on 12 March.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P15-4",
+   "passage": "P15",
+   "quote": "a dividend of 0.42 per share",
+   "claim": "The board approved a dividend of 0.24 per share.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P15-5",
+   "passage": "P15",
+   "quote": "The board approved a dividend of 0.42 per share",
+   "claim": "The board raised the dividend to 0.42 per share.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": true
+  },
+  {
+   "id": "P16-1",
+   "passage": "P16",
+   "quote": "Pedestrians and cyclists can still cross on the east sidewalk",
+   "claim": "Pedestrians and cyclists can still cross on the east sidewalk.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P16-2",
+   "passage": "P16",
+   "quote": "closed to cars from 1 June to 30 September for deck repairs",
+   "claim": "Drivers cannot use the bridge between June and September because of deck repairs.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P16-3",
+   "passage": "P16",
+   "quote": "The bridge will be closed to cars from 1 June to 30 September",
+   "claim": "The bridge will be closed to all traffic from 1 June to 30 September.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P16-4",
+   "passage": "P16",
+   "quote": "cross on the east sidewalk",
+   "claim": "Pedestrians and cyclists can still cross on the west sidewalk.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P16-5",
+   "passage": "P16",
+   "quote": "Pedestrians and cyclists can still cross on the east sidewalk",
+   "claim": "The repairs will cost 4 million dollars.",
+   "label": "unsupported",
+   "error_type": "unrelated_quote",
+   "hard": false
+  },
+  {
+   "id": "P17-1",
+   "passage": "P17",
+   "quote": "Firmware 2.4 adds support for WPA3",
+   "claim": "Firmware 2.4 adds support for WPA3.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P17-2",
+   "passage": "P17",
+   "quote": "fixes a bug that drained the battery in standby",
+   "claim": "The update fixes battery drain while the device is in standby.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P17-3",
+   "passage": "P17",
+   "quote": "It does not change the Bluetooth stack",
+   "claim": "Firmware 2.4 changes the Bluetooth stack.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P17-4",
+   "passage": "P17",
+   "quote": "Firmware 2.4 adds support for WPA3",
+   "claim": "Firmware 2.3 adds support for WPA3.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P17-5",
+   "passage": "P17",
+   "quote": "Firmware 2.4 adds support for WPA3",
+   "claim": "Firmware 2.4 adds support for WPA2.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P18-1",
+   "passage": "P18",
+   "quote": "Severe reactions are rare",
+   "claim": "Severe reactions are rare.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P18-2",
+   "passage": "P18",
+   "quote": "occurred in fewer than 1 in 1,000 patients in trials",
+   "claim": "In trials, under one in a thousand patients had a severe reaction.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P18-3",
+   "passage": "P18",
+   "quote": "Patients may experience mild headache or nausea in the first week",
+   "claim": "Patients experience mild headache or nausea in the first week.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P18-4",
+   "passage": "P18",
+   "quote": "occurred in fewer than 1 in 1,000 patients",
+   "claim": "Severe reactions occurred in fewer than 1 in 10,000 patients.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P18-5",
+   "passage": "P18",
+   "quote": "Severe reactions are rare",
+   "claim": "Severe reactions are common.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P19-1",
+   "passage": "P19",
+   "quote": "heat and water are included",
+   "claim": "Heat and water are included in the rent.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P19-2",
+   "passage": "P19",
+   "quote": "two bedrooms, one bathroom",
+   "claim": "The flat is a two-bedroom with a single bathroom.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P19-3",
+   "passage": "P19",
+   "quote": "heat and water are included, electricity is not",
+   "claim": "Heat, water and electricity are included.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P19-4",
+   "passage": "P19",
+   "quote": "Rent is 1,850 per month",
+   "claim": "Rent is 1,580 per month.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P19-5",
+   "passage": "P19",
+   "quote": "a balcony facing the courtyard",
+   "claim": "The apartment has a balcony facing the street.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P20-1",
+   "passage": "P20",
+   "quote": "Node 18 or newer is required",
+   "claim": "Node 18 or newer is required.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P20-2",
+   "passage": "P20",
+   "quote": "Node 18 or newer is required",
+   "claim": "The library runs on Node 20.",
+   "label": "supported",
+   "error_type": "reasoning",
+   "hard": false
+  },
+  {
+   "id": "P20-3",
+   "passage": "P20",
+   "quote": "Node 18 or newer is required",
+   "claim": "Node 20 or newer is required.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P20-4",
+   "passage": "P20",
+   "quote": "Version 5 of the library drops support for Node 16",
+   "claim": "Version 5 of the library adds support for Node 16.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P20-5",
+   "passage": "P20",
+   "quote": "drops support for Node 16",
+   "claim": "Version 5 is faster than version 4.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P21-1",
+   "passage": "P21",
+   "quote": "38% had used a generative AI tool at work in the past month",
+   "claim": "38% of adults surveyed had used a generative AI tool at work in the past month.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P21-2",
+   "passage": "P21",
+   "quote": "The survey of 1,200 adults",
+   "claim": "The survey polled 1,200 adults.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P21-3",
+   "passage": "P21",
+   "quote": "38% had used a generative AI tool at work in the past month",
+   "claim": "38% of adults use generative AI tools at work every day.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P21-4",
+   "passage": "P21",
+   "quote": "The margin of error is plus or minus 3 points",
+   "claim": "The margin of error is plus or minus 5 points.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P21-5",
+   "passage": "P21",
+   "quote": "38% had used a generative AI tool at work",
+   "claim": "Most adults have never used a generative AI tool.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P22-1",
+   "passage": "P22",
+   "quote": "The ferry departs Horseshoe Bay at 07:20",
+   "claim": "The ferry departs Horseshoe Bay at 07:20.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P22-2",
+   "passage": "P22",
+   "quote": "Reservations are recommended on summer weekends",
+   "claim": "Booking ahead is a good idea on summer weekends.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P22-3",
+   "passage": "P22",
+   "quote": "departs Horseshoe Bay at 07:20 and arrives at Departure Bay at 09:00",
+   "claim": "The ferry departs Departure Bay at 07:20 and arrives at Horseshoe Bay at 09:00.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P22-4",
+   "passage": "P22",
+   "quote": "Reservations are recommended on summer weekends",
+   "claim": "Reservations are required on summer weekends.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P22-5",
+   "passage": "P22",
+   "quote": "arrives at Departure Bay at 09:00",
+   "claim": "The ferry arrives at Departure Bay at 08:30.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P23-1",
+   "passage": "P23",
+   "quote": "Do not put them in the dishwasher",
+   "claim": "Do not put cast iron pans in the dishwasher.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P23-2",
+   "passage": "P23",
+   "quote": "should be dried immediately after washing and lightly oiled",
+   "claim": "After washing a cast iron pan, dry it right away and give it a thin coat of oil.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P23-3",
+   "passage": "P23",
+   "quote": "Do not put them in the dishwasher",
+   "claim": "Cast iron pans can go in the dishwasher.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": false
+  },
+  {
+   "id": "P23-4",
+   "passage": "P23",
+   "quote": "should be dried immediately after washing",
+   "claim": "Cast iron pans should be dried immediately after washing and never washed with soap.",
+   "label": "unsupported",
+   "error_type": "fabricated_detail",
+   "hard": true
+  },
+  {
+   "id": "P23-5",
+   "passage": "P23",
+   "quote": "lightly oiled",
+   "claim": "Cast iron pans heat evenly.",
+   "label": "unsupported",
+   "error_type": "unrelated_quote",
+   "hard": false
+  },
+  {
+   "id": "P24-1",
+   "passage": "P24",
+   "quote": "The 2026 model weighs 13.2 kg without pedals",
+   "claim": "The 2026 model weighs 13.2 kg without pedals.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P24-2",
+   "passage": "P24",
+   "quote": "The frame is aluminium; the fork is carbon",
+   "claim": "It has an aluminium frame with a carbon fork.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P24-3",
+   "passage": "P24",
+   "quote": "The frame is aluminium; the fork is carbon",
+   "claim": "The frame is carbon; the fork is aluminium.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P24-4",
+   "passage": "P24",
+   "quote": "weighs 13.2 kg without pedals",
+   "claim": "The 2026 model weighs 13.2 lb without pedals.",
+   "label": "unsupported",
+   "error_type": "unit_changed",
+   "hard": true
+  },
+  {
+   "id": "P24-5",
+   "passage": "P24",
+   "quote": "a 12-speed drivetrain",
+   "claim": "The bike has an 11-speed drivetrain.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P25-1",
+   "passage": "P25",
+   "quote": "Certificates are issued within 30 days of the course end date",
+   "claim": "Certificates are issued within 30 days of the course end date.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P25-2",
+   "passage": "P25",
+   "quote": "Students who complete at least 80% of the labs may be eligible for a certificate",
+   "claim": "Finishing 80% or more of the labs can make a student eligible for a certificate.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P25-3",
+   "passage": "P25",
+   "quote": "Students who complete at least 80% of the labs may be eligible for a certificate",
+   "claim": "Students who complete at least 80% of the labs are eligible for a certificate.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P25-4",
+   "passage": "P25",
+   "quote": "at least 80% of the labs",
+   "claim": "Students must complete at least 70% of the labs.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P25-5",
+   "passage": "P25",
+   "quote": "Certificates are issued within 30 days",
+   "claim": "The certificate is accredited by the provincial government.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P26-1",
+   "passage": "P26",
+   "quote": "The council voted 7 to 2 to approve the bike lane on Elm Street",
+   "claim": "The council voted 7 to 2 to approve the Elm Street bike lane.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P26-2",
+   "passage": "P26",
+   "quote": "Construction is expected to start next spring, pending funding",
+   "claim": "If funding comes through, work should begin next spring.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P26-3",
+   "passage": "P26",
+   "quote": "voted 7 to 2",
+   "claim": "The council voted 8 to 1 to approve the bike lane.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P26-4",
+   "passage": "P26",
+   "quote": "Construction is expected to start next spring, pending funding",
+   "claim": "Construction will start next spring.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P26-5",
+   "passage": "P26",
+   "quote": "approve the bike lane on Elm Street",
+   "claim": "The council voted to approve the bike lane on Oak Street.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P27-1",
+   "passage": "P27",
+   "quote": "a 512 GB SSD that can be replaced",
+   "claim": "The laptop has a 512 GB SSD that can be replaced.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P27-2",
+   "passage": "P27",
+   "quote": "16 GB of RAM, soldered to the board",
+   "claim": "The 16 GB of memory cannot be upgraded because it is soldered.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P27-3",
+   "passage": "P27",
+   "quote": "16 GB of RAM, soldered to the board, and a 512 GB SSD that can be replaced",
+   "claim": "The laptop has 16 GB of RAM that can be replaced and a 512 GB SSD soldered to the board.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P27-4",
+   "passage": "P27",
+   "quote": "Battery life is rated at up to 14 hours of video playback",
+   "claim": "Battery life is 14 hours.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P27-5",
+   "passage": "P27",
+   "quote": "16 GB of RAM",
+   "claim": "The laptop has 16 TB of RAM.",
+   "label": "unsupported",
+   "error_type": "unit_changed",
+   "hard": true
+  },
+  {
+   "id": "P28-1",
+   "passage": "P28",
+   "quote": "The hotel's pool is open from May to September",
+   "claim": "The hotel's pool is open from May to September.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P28-2",
+   "passage": "P28",
+   "quote": "Pets under 10 kg are welcome for a fee of 25 per night",
+   "claim": "Small pets under 10 kg can stay for 25 a night.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P28-3",
+   "passage": "P28",
+   "quote": "Pets under 10 kg are welcome",
+   "claim": "Pets are welcome at the hotel.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P28-4",
+   "passage": "P28",
+   "quote": "a fee of 25 per night",
+   "claim": "Pets are welcome for a fee of 35 per night.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P28-5",
+   "passage": "P28",
+   "quote": "The hotel's pool is open from May to September",
+   "claim": "The hotel's pool is heated.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P29-1",
+   "passage": "P29",
+   "quote": "The Rust 2024 edition was stabilised in Rust 1.85",
+   "claim": "The Rust 2024 edition was stabilised in Rust 1.85.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P29-2",
+   "passage": "P29",
+   "quote": "Rust 1.85, released in February 2025",
+   "claim": "Rust 1.85 came out in February 2025.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P29-3",
+   "passage": "P29",
+   "quote": "stabilised in Rust 1.85",
+   "claim": "The Rust 2024 edition was stabilised in Rust 1.84.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P29-4",
+   "passage": "P29",
+   "quote": "Rust 1.85, released in February 2025",
+   "claim": "Rust 1.85 was released in March 2025.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": true
+  },
+  {
+   "id": "P29-5",
+   "passage": "P29",
+   "quote": "The Rust 2024 edition was stabilised in Rust 1.82",
+   "claim": "The Rust 2024 edition was stabilised in Rust 1.82.",
+   "label": "unsupported",
+   "error_type": "quote_not_in_source",
+   "hard": false
+  },
+  {
+   "id": "P30-1",
+   "passage": "P30",
+   "quote": "Lab results are usually available within 48 hours",
+   "claim": "Lab results are usually available within 48 hours.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P30-2",
+   "passage": "P30",
+   "quote": "can take up to a week",
+   "claim": "Results needing specialist review may take as long as a week.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P30-3",
+   "passage": "P30",
+   "quote": "Lab results are usually available within 48 hours",
+   "claim": "Lab results are always available within 48 hours.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P30-4",
+   "passage": "P30",
+   "quote": "within 48 hours",
+   "claim": "Lab results are usually available within 24 hours.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P30-5",
+   "passage": "P30",
+   "quote": "Results that need a specialist review can take up to a week",
+   "claim": "Specialist reviews are free of charge.",
+   "label": "unsupported",
+   "error_type": "unrelated_quote",
+   "hard": false
+  },
+  {
+   "id": "P31-1",
+   "passage": "P31",
+   "quote": "a single-origin washed Ethiopian, roasted light",
+   "claim": "The coffee is a single-origin washed Ethiopian, roasted light.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P31-2",
+   "passage": "P31",
+   "quote": "Tasting notes: jasmine, lemon, black tea",
+   "claim": "It tastes of jasmine, lemon and black tea.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P31-3",
+   "passage": "P31",
+   "quote": "a single-origin washed Ethiopian",
+   "claim": "The coffee is a single-origin natural Ethiopian.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P31-4",
+   "passage": "P31",
+   "quote": "roasted light",
+   "claim": "The coffee is roasted dark.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": false
+  },
+  {
+   "id": "P31-5",
+   "passage": "P31",
+   "quote": "Tasting notes: jasmine, lemon, black tea",
+   "claim": "Tasting notes: jasmine, lemon, black tea, with a chocolate finish.",
+   "label": "unsupported",
+   "error_type": "fabricated_detail",
+   "hard": true
+  },
+  {
+   "id": "P32-1",
+   "passage": "P32",
+   "quote": "Leave must be taken within 12 months of the birth or adoption",
+   "claim": "Leave must be taken within 12 months of the birth or adoption.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P32-2",
+   "passage": "P32",
+   "quote": "birth parents 17 weeks of paid leave",
+   "claim": "A birth parent gets 17 weeks paid.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P32-3",
+   "passage": "P32",
+   "quote": "birth parents 17 weeks of paid leave and other parents 8 weeks",
+   "claim": "The policy gives birth parents 8 weeks of paid leave and other parents 17 weeks.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P32-4",
+   "passage": "P32",
+   "quote": "within 12 months",
+   "claim": "Leave must be taken within 18 months of the birth.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P32-5",
+   "passage": "P32",
+   "quote": "other parents 8 weeks",
+   "claim": "Other parents get 8 weeks of paid leave, which can be split into two blocks.",
+   "label": "unsupported",
+   "error_type": "fabricated_detail",
+   "hard": false
+  },
+  {
+   "id": "P33-1",
+   "passage": "P33",
+   "quote": "Top-1 accuracy on the held-out set was 82.4%",
+   "claim": "Top-1 accuracy on the held-out set was 82.4%.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P33-2",
+   "passage": "P33",
+   "quote": "trained on 2.1 million labelled images",
+   "claim": "Its training data was 2.1 million labelled images.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P33-3",
+   "passage": "P33",
+   "quote": "Top-1 accuracy on the held-out set was 82.4%",
+   "claim": "Top-5 accuracy on the held-out set was 82.4%.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P33-4",
+   "passage": "P33",
+   "quote": "a held-out set of 50,000",
+   "claim": "The model was evaluated on a held-out set of 500,000.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P33-5",
+   "passage": "P33",
+   "quote": "Top-1 accuracy on the held-out set was 82.4%",
+   "claim": "The model beats human accuracy on this task.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P34-1",
+   "passage": "P34",
+   "quote": "Tickets are refundable up to 48 hours before the show",
+   "claim": "Tickets are refundable up to 48 hours before the show.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P34-2",
+   "passage": "P34",
+   "quote": "they can be exchanged for another date but not refunded",
+   "claim": "Within 48 hours of the show you can swap your ticket for a different date, but you cannot get your money back.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P34-3",
+   "passage": "P34",
+   "quote": "they can be exchanged for another date but not refunded",
+   "claim": "Within 48 hours of the show tickets can be refunded but not exchanged.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P34-4",
+   "passage": "P34",
+   "quote": "up to 48 hours before the show",
+   "claim": "Tickets are refundable up to 24 hours before the show.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P34-5",
+   "passage": "P34",
+   "quote": "Tickets are refundable up to 48 hours before the show",
+   "claim": "Tickets are fully refundable.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": false
+  },
+  {
+   "id": "P35-1",
+   "passage": "P35",
+   "quote": "Swimming is allowed at the north beach",
+   "claim": "Swimming is allowed at the north beach.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P35-2",
+   "passage": "P35",
+   "quote": "reaches a maximum depth of 38 m",
+   "claim": "At its deepest the lake is 38 metres.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P35-3",
+   "passage": "P35",
+   "quote": "Swimming is allowed at the north beach",
+   "claim": "Swimming is allowed at the south beach.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P35-4",
+   "passage": "P35",
+   "quote": "motorboats are prohibited",
+   "claim": "Motorboats are allowed on Kettle Lake.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P35-5",
+   "passage": "P35",
+   "quote": "Kettle Lake is 4.2 km long",
+   "claim": "Kettle Lake is 4.2 miles long.",
+   "label": "unsupported",
+   "error_type": "unit_changed",
+   "hard": true
+  },
+  {
+   "id": "P36-1",
+   "passage": "P36",
+   "quote": "The startup raised 12 million in a Series A led by Northwind Ventures",
+   "claim": "The startup raised 12 million in a Series A led by Northwind Ventures.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P36-2",
+   "passage": "P36",
+   "quote": "Existing investors Halcyon and Bramble also participated",
+   "claim": "Halcyon and Bramble, who had already invested, joined the round.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P36-3",
+   "passage": "P36",
+   "quote": "a Series A led by Northwind Ventures",
+   "claim": "The startup raised a Series A led by Halcyon.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P36-4",
+   "passage": "P36",
+   "quote": "raised 12 million in a Series A",
+   "claim": "The startup raised 12 million in a Series B.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P36-5",
+   "passage": "P36",
+   "quote": "The startup raised 12 million",
+   "claim": "The startup is now valued at 60 million.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P37-1",
+   "passage": "P37",
+   "quote": "hold the reset button for 10 seconds",
+   "claim": "To reset the router, hold the reset button for 10 seconds.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P37-2",
+   "passage": "P37",
+   "quote": "This erases all custom settings",
+   "claim": "A reset wipes every custom setting.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P37-3",
+   "passage": "P37",
+   "quote": "hold the reset button for 10 seconds",
+   "claim": "To reset the router, hold the reset button for 30 seconds.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P37-4",
+   "passage": "P37",
+   "quote": "until the light blinks amber",
+   "claim": "Hold the reset button until the light blinks green.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P37-5",
+   "passage": "P37",
+   "quote": "This erases all custom settings",
+   "claim": "A reset keeps all custom settings.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P38-1",
+   "passage": "P38",
+   "quote": "a 23% reduction in hospital readmissions",
+   "claim": "The paper reports a 23% reduction in hospital readmissions.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P38-2",
+   "passage": "P38",
+   "quote": "The study was observational",
+   "claim": "It was an observational study, not a randomised trial.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P38-3",
+   "passage": "P38",
+   "quote": "a 23% reduction in hospital readmissions among patients enrolled in the program",
+   "claim": "The program caused a 23% reduction in hospital readmissions.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": true
+  },
+  {
+   "id": "P38-4",
+   "passage": "P38",
+   "quote": "a 23% reduction in hospital readmissions",
+   "claim": "The paper reports a 32% reduction in hospital readmissions.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P38-5",
+   "passage": "P38",
+   "quote": "a 23% reduction in hospital readmissions among patients enrolled in the program",
+   "claim": "The program reduced readmissions by 23% for all patients.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P39-1",
+   "passage": "P39",
+   "quote": "The phone is rated IP68",
+   "claim": "The phone is rated IP68.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P39-2",
+   "passage": "P39",
+   "quote": "protected against immersion in 1.5 m of fresh water for up to 30 minutes",
+   "claim": "It can survive half an hour in 1.5 m of fresh water.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P39-3",
+   "passage": "P39",
+   "quote": "fresh water",
+   "claim": "The phone is protected against immersion in salt water.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P39-4",
+   "passage": "P39",
+   "quote": "The phone is rated IP68",
+   "claim": "The phone is rated IP67.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P39-5",
+   "passage": "P39",
+   "quote": "dust-tight",
+   "claim": "The phone is shockproof.",
+   "label": "unsupported",
+   "error_type": "unsupported_inference",
+   "hard": false
+  },
+  {
+   "id": "P40-1",
+   "passage": "P40",
+   "quote": "Registration for the spring session opens on 3 March",
+   "claim": "Registration for the spring session opens on 3 March.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P40-2",
+   "passage": "P40",
+   "quote": "Members get one week of early access",
+   "claim": "Members can sign up a week before everyone else.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P40-3",
+   "passage": "P40",
+   "quote": "Registration for the spring session opens on 3 March",
+   "claim": "The waitlist for the spring session opens on 3 March.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P40-4",
+   "passage": "P40",
+   "quote": "opens on 3 March",
+   "claim": "Registration for the spring session opens on 13 March.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P40-5",
+   "passage": "P40",
+   "quote": "Registration for the spring session",
+   "claim": "Registration for the fall session opens on 3 March.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P41-1",
+   "passage": "P41",
+   "quote": "The software is free for personal use",
+   "claim": "The software is free for personal use.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P41-2",
+   "passage": "P41",
+   "quote": "priced at 99 per seat per year",
+   "claim": "A commercial licence costs 99 a year for each seat.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P41-3",
+   "passage": "P41",
+   "quote": "The software is free for personal use",
+   "claim": "The software is free.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": false
+  },
+  {
+   "id": "P41-4",
+   "passage": "P41",
+   "quote": "priced at 99 per seat per year",
+   "claim": "Commercial use requires a licence priced at 99 per seat per month.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": true
+  },
+  {
+   "id": "P41-5",
+   "passage": "P41",
+   "quote": "Commercial use requires a licence",
+   "claim": "Commercial use does not require a licence.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P42-1",
+   "passage": "P42",
+   "quote": "Dogs must be on a leash",
+   "claim": "Dogs must be on a leash on the trail.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P42-2",
+   "passage": "P42",
+   "quote": "11 km return with 600 m of elevation gain",
+   "claim": "The round trip is 11 km and climbs 600 m.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P42-3",
+   "passage": "P42",
+   "quote": "The upper section is closed from November to April",
+   "claim": "The trail is closed from November to April.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P42-4",
+   "passage": "P42",
+   "quote": "600 m of elevation gain",
+   "claim": "The trail has 800 m of elevation gain.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P42-5",
+   "passage": "P42",
+   "quote": "The trail is 11 km return",
+   "claim": "The trail is 11 miles return.",
+   "label": "unsupported",
+   "error_type": "unit_changed",
+   "hard": true
+  },
+  {
+   "id": "P43-1",
+   "passage": "P43",
+   "quote": "The update to the privacy policy takes effect on 1 May",
+   "claim": "The privacy policy update takes effect on 1 May.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P43-2",
+   "passage": "P43",
+   "quote": "We will no longer share location data with advertising partners",
+   "claim": "Location data will stop being shared with ad partners.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P43-3",
+   "passage": "P43",
+   "quote": "We will no longer share location data with advertising partners",
+   "claim": "We will share location data with advertising partners.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P43-4",
+   "passage": "P43",
+   "quote": "no longer share location data with advertising partners",
+   "claim": "We will no longer share any data with anyone.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": false
+  },
+  {
+   "id": "P43-5",
+   "passage": "P43",
+   "quote": "takes effect on 1 May",
+   "claim": "The update to the privacy policy takes effect on 1 June.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P44-1",
+   "passage": "P44",
+   "quote": "Wheelchairs are available to borrow at the front desk free of charge",
+   "claim": "Wheelchairs are available to borrow at the front desk free of charge.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P44-2",
+   "passage": "P44",
+   "quote": "accessible by elevator from the main lobby",
+   "claim": "You can reach the gallery by taking the lift from the main lobby.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P44-3",
+   "passage": "P44",
+   "quote": "Wheelchairs are available to borrow at the front desk",
+   "claim": "Strollers are available to borrow at the front desk.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P44-4",
+   "passage": "P44",
+   "quote": "Wheelchairs are available to borrow at the front desk free of charge",
+   "claim": "Wheelchairs are available to borrow at the front desk free of charge and can be reserved online.",
+   "label": "unsupported",
+   "error_type": "fabricated_detail",
+   "hard": true
+  },
+  {
+   "id": "P44-5",
+   "passage": "P44",
+   "quote": "accessible by elevator from the main lobby",
+   "claim": "The gallery has a cafe on the top floor.",
+   "label": "unsupported",
+   "error_type": "unrelated_quote",
+   "hard": false
+  },
+  {
+   "id": "P45-1",
+   "passage": "P45",
+   "quote": "No data was lost",
+   "claim": "No data was lost during the outage.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P45-2",
+   "passage": "P45",
+   "quote": "about 18% of requests in the eu-west region failed for 42 minutes",
+   "claim": "For 42 minutes, roughly 18% of eu-west requests failed.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P45-3",
+   "passage": "P45",
+   "quote": "about 18% of requests in the eu-west region failed",
+   "claim": "About 18% of requests in the us-east region failed.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P45-4",
+   "passage": "P45",
+   "quote": "about 18% of requests in the eu-west region failed for 42 minutes",
+   "claim": "All requests in the eu-west region failed for 42 minutes.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": false
+  },
+  {
+   "id": "P45-5",
+   "passage": "P45",
+   "quote": "failed for 42 minutes",
+   "claim": "Requests failed for 24 minutes.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P46-1",
+   "passage": "P46",
+   "quote": "The scholarship covers tuition for up to four years",
+   "claim": "The scholarship covers tuition for up to four years.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P46-2",
+   "passage": "P46",
+   "quote": "It does not cover housing or textbooks",
+   "claim": "Housing and textbooks are not included in the scholarship.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P46-3",
+   "passage": "P46",
+   "quote": "It does not cover housing or textbooks",
+   "claim": "The scholarship covers housing and textbooks.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P46-4",
+   "passage": "P46",
+   "quote": "for up to four years",
+   "claim": "The scholarship covers tuition for up to five years.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P46-5",
+   "passage": "P46",
+   "quote": "The scholarship covers tuition",
+   "claim": "The scholarship covers tuition and a monthly living stipend.",
+   "label": "unsupported",
+   "error_type": "fabricated_detail",
+   "hard": false
+  },
+  {
+   "id": "P47-1",
+   "passage": "P47",
+   "quote": "A full charge takes 4 hours",
+   "claim": "A full charge takes 4 hours.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P47-2",
+   "passage": "P47",
+   "quote": "about 60 minutes on eco mode",
+   "claim": "On eco mode the battery lasts roughly an hour.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P47-3",
+   "passage": "P47",
+   "quote": "about 60 minutes on eco mode and 12 minutes on max",
+   "claim": "The battery lasts about 60 minutes on max and 12 minutes on eco mode.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P47-4",
+   "passage": "P47",
+   "quote": "A full charge takes 4 hours",
+   "claim": "A full charge takes 2 hours.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P47-5",
+   "passage": "P47",
+   "quote": "about 60 minutes on eco mode",
+   "claim": "The battery lasts 60 minutes.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P48-1",
+   "passage": "P48",
+   "quote": "The contract renews automatically for one-year terms",
+   "claim": "The contract renews automatically for one-year terms.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P48-2",
+   "passage": "P48",
+   "quote": "unless either party gives 60 days' written notice before the renewal date",
+   "claim": "To stop the renewal, a party must give written notice at least 60 days ahead.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P48-3",
+   "passage": "P48",
+   "quote": "unless either party gives 60 days' written notice",
+   "claim": "The contract renews unless either party gives 30 days' written notice.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P48-4",
+   "passage": "P48",
+   "quote": "60 days' written notice",
+   "claim": "The contract renews unless either party gives 60 days' verbal notice.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P48-5",
+   "passage": "P48",
+   "quote": "The contract renews automatically",
+   "claim": "The contract does not renew automatically.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P49-1",
+   "passage": "P49",
+   "quote": "Mount Robson is the highest peak in the Canadian Rockies",
+   "claim": "Mount Robson is the highest peak in the Canadian Rockies.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P49-2",
+   "passage": "P49",
+   "quote": "The first confirmed ascent was in 1913",
+   "claim": "Climbers first confirmed reaching the summit in 1913.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P49-3",
+   "passage": "P49",
+   "quote": "The first confirmed ascent was in 1913",
+   "claim": "The first confirmed ascent was in 1931.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": true
+  },
+  {
+   "id": "P49-4",
+   "passage": "P49",
+   "quote": "the highest peak in the Canadian Rockies",
+   "claim": "Mount Robson is the highest peak in Canada.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P49-5",
+   "passage": "P49",
+   "quote": "Mount Robson is 3,954 m tall and was first climbed in 1909",
+   "claim": "Mount Robson was first climbed in 1909.",
+   "label": "unsupported",
+   "error_type": "quote_not_in_source",
+   "hard": false
+  },
+  {
+   "id": "P50-1",
+   "passage": "P50",
+   "quote": "The cafe uses oat milk by default",
+   "claim": "The cafe uses oat milk by default.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P50-2",
+   "passage": "P50",
+   "quote": "Dairy milk is available on request at no extra charge",
+   "claim": "You can ask for dairy milk and it costs nothing extra.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P50-3",
+   "passage": "P50",
+   "quote": "Dairy milk is available on request at no extra charge; almond milk costs 0.50 more",
+   "claim": "Almond milk is available on request at no extra charge; dairy milk costs 0.50 more.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P50-4",
+   "passage": "P50",
+   "quote": "The cafe uses oat milk by default",
+   "claim": "The cafe uses almond milk by default.",
+   "label": "unsupported",
+   "error_type": "entity_swapped",
+   "hard": true
+  },
+  {
+   "id": "P50-5",
+   "passage": "P50",
+   "quote": "almond milk costs 0.50 more",
+   "claim": "Almond milk costs 0.50 more and soy milk is also offered.",
+   "label": "unsupported",
+   "error_type": "fabricated_detail",
+   "hard": false
+  },
+  {
+   "id": "P51-1",
+   "passage": "P51",
+   "quote": "The election turnout was 61.3%",
+   "claim": "The election turnout was 61.3%.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P51-2",
+   "passage": "P51",
+   "quote": "The election turnout was 61.3%, up from 58.0% four years earlier",
+   "claim": "Turnout rose by more than three points compared with four years earlier.",
+   "label": "supported",
+   "error_type": "reasoning",
+   "hard": false
+  },
+  {
+   "id": "P51-3",
+   "passage": "P51",
+   "quote": "The incumbent won with 47% of the vote",
+   "claim": "The incumbent won a majority of the vote.",
+   "label": "unsupported",
+   "error_type": "overclaim",
+   "hard": true
+  },
+  {
+   "id": "P51-4",
+   "passage": "P51",
+   "quote": "up from 58.0% four years earlier",
+   "claim": "Turnout was down from 58.0% four years earlier.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": true
+  },
+  {
+   "id": "P51-5",
+   "passage": "P51",
+   "quote": "The election turnout was 61.3%",
+   "claim": "The election turnout was 63.1%.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": false
+  },
+  {
+   "id": "P52-1",
+   "passage": "P52",
+   "quote": "The warranty covers manufacturing defects for two years",
+   "claim": "The warranty covers manufacturing defects for two years.",
+   "label": "supported",
+   "error_type": "exact",
+   "hard": false
+  },
+  {
+   "id": "P52-2",
+   "passage": "P52",
+   "quote": "It does not cover water damage or normal wear",
+   "claim": "Water damage and ordinary wear are excluded from the warranty.",
+   "label": "supported",
+   "error_type": "paraphrase",
+   "hard": false
+  },
+  {
+   "id": "P52-3",
+   "passage": "P52",
+   "quote": "It does not cover water damage",
+   "claim": "The warranty covers water damage.",
+   "label": "unsupported",
+   "error_type": "negation_flip",
+   "hard": false
+  },
+  {
+   "id": "P52-4",
+   "passage": "P52",
+   "quote": "for two years from the date of purchase",
+   "claim": "The warranty covers manufacturing defects for three years from the date of purchase.",
+   "label": "unsupported",
+   "error_type": "number_changed",
+   "hard": true
+  },
+  {
+   "id": "P52-5",
+   "passage": "P52",
+   "quote": "for two years from the date of purchase",
+   "claim": "The warranty can be transferred to a new owner.",
+   "label": "unsupported",
+   "error_type": "unrelated_quote",
+   "hard": false
+  }
+ ]
+}
