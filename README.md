@@ -170,8 +170,8 @@ Grounding gate, false-accept rate by error type: changed number 10/52, unsupport
 2/19, entity swapped 25/42, unit swapped 4/7, negation flip 12/19, overclaim 17/22, invented
 extra clause 10/10. Unrelated quotes were caught in all 6 cases and quotes not in the source in
 both of 2, which is too few to call a rate.
-False-reject rate by kind of supported claim: near-copy 1/53, paraphrase 45/70, needs reasoning
-15/15.
+False-reject rate by kind of supported claim: near-copy 1/53, fragment 2/3, paraphrase 45/70,
+needs reasoning 15/15.
 
 Injection gate, false-accept rate by public source: BIPIA 19/20, deepset 23/25, Lakera Gandalf
 16/25, Nemotron agentic injection 16/20. On the 33 attacks written for this repo (canary payloads,
@@ -327,13 +327,17 @@ Setup is in the Quickstart at the top; `python -m pytest -q` from the repo root 
 The explicit form, which CI uses, is
 `python -m pytest projects/job-search/tests tools/engine/tests -q`.
 
-The full suite is 152 tests. The two gates under `projects/job-search/tests` are 63 of them
-(honesty 17, eligibility 46) and are pure, offline, stdlib-only. `tools/engine/tests` holds the
-other 89, also offline: 41 for the grounding gate (the substring check, the support check and the
-claim parsing; the live free-model call in `extract_grounded` is not run in tests), 26 for the
-injection gate, 6 that pin the worked examples, and 16 for the evaluation code, one of which
-fails if `GATE_RESULTS.md` no longer matches a fresh run. Both paths run in CI on every push
-(`.github/workflows/ci.yml`).
+The suite prints its own count on the last line of `python -m pytest -q`, and
+`python -m pytest --collect-only -q` lists every test by file. Last measured on 2026-11-19 at
+commit 0e50ec4: 152 passed, on Python 3.11, 3.12 and 3.13. Per-file counts are not kept here
+because they go stale; the collect command prints them.
+
+`projects/job-search/tests` covers the honesty and eligibility gates and is pure, offline,
+stdlib-only. `tools/engine/tests` is also offline and covers the grounding gate (the substring
+check, the support check and the claim parsing; the live free-model call in `extract_grounded`
+is not run in tests), the injection gate, the worked examples, and the evaluation code, one test
+of which fails if `GATE_RESULTS.md` no longer matches a fresh run. Both paths run in CI on every
+push (`.github/workflows/ci.yml`).
 
 To re-run the grounding and injection evaluation and regenerate
 `tools/engine/eval/GATE_RESULTS.md` and `gate_results.json`:
