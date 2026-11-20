@@ -13,17 +13,19 @@ read, so a quote carrying an invented extra clause still gets through.
 ## Quickstart
 
 ```
-git clone https://github.com/Aeripsen/agent-gates && cd agent-gates
+git clone https://github.com/Aeripsen/agent-gates
+cd agent-gates
 python -m venv .venv                    # use python3 if python is not found
 source .venv/bin/activate               # Windows PowerShell: .venv\Scripts\Activate.ps1
-pip install -r requirements-dev.txt     # pytest, nothing else
+python -m pip install -r requirements-dev.txt   # pytest, nothing else
 python -m pytest -q                     # both test folders; the last line is the count
 python examples/worked_examples.py      # each gate refusing an injected input
 ```
 
-Needs Python 3.11 or newer (tested on 3.11, 3.12 and 3.13). Only the `pip install` uses the
-network; the gates and tests run offline and need no keys. If PowerShell refuses to run the
-activate script, skip activation and call `.venv\Scripts\python.exe` in place of `python`.
+Needs Python 3.11 or newer (tested on 3.11, 3.12 and 3.13). Only the `git clone` and the
+`pip install` use the network; the gates and tests run offline and need no keys. If PowerShell
+refuses to run the activate script, skip activation and call `.venv\Scripts\python.exe` in
+place of `python` on every line, including `-m pip install`.
 The last command prints the output quoted under "One worked example per gate" below.
 
 ## What this measures
