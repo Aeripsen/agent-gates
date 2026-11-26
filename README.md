@@ -2,6 +2,13 @@
 
 [![tests](https://github.com/Aeripsen/agent-gates/actions/workflows/ci.yml/badge.svg)](https://github.com/Aeripsen/agent-gates/actions/workflows/ci.yml)
 
+**At a glance.**
+
+- **What:** four small checks, written as plain Python, that sit between a language model and what it is about to say or do.
+- **Run it:** the Quickstart below is a clone, a virtualenv, one pip line and one pytest line. No keys and no network after the install; 152 tests pass in about 3 seconds.
+- **Result:** these are weak filters and the README says how weak. On labelled cases the grounding gate lets through 80 of 179 unsupported claims, and the injection gate misses 74 of 90 public attacks. The tables and every miss are under "Measured error rates".
+- **Not:** a safety guarantee. A pass means "no known violation".
+
 Machine-checkable gates for LLM agents: an honesty gate that keeps a generated resume from
 vouching for itself, an eligibility gate that blocks job classes a student applicant cannot be
 hired into, a grounding gate that drops any web-extracted claim whose quote is not verbatim in
@@ -330,8 +337,8 @@ The explicit form, which CI uses, is
 `python -m pytest projects/job-search/tests tools/engine/tests -q`.
 
 The suite prints its own count on the last line of `python -m pytest -q`, and
-`python -m pytest --collect-only -q` lists every test by file. Last measured on 2026-11-19 at
-commit 0e50ec4: 152 passed, on Python 3.11, 3.12 and 3.13. Per-file counts are not kept here
+`python -m pytest --collect-only -q` lists every test by file. Last measured on 2026-11-26 at
+commit c680d48: 152 passed (Python 3.14 locally; CI runs 3.11, 3.12 and 3.13). Per-file counts are not kept here
 because they go stale; the collect command prints them.
 
 `projects/job-search/tests` covers the honesty and eligibility gates and is pure, offline,
